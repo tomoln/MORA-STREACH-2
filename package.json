@@ -1,0 +1,15 @@
+{
+  "name": "mora-streach",
+  "version": "1.0.0",
+  "description": "Mora Streach App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^34.0.0"
+  },
+  "dependencies": {
+    "soundtouchjs": "^0.2.3"
+  }
+}

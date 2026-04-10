@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Controls</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0f0f1c;
+      color: #d0d0d0;
+      font-family: sans-serif;
+      font-size: 13px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      gap: 12px;
+      user-select: none;
+    }
+    .label {
+      color: #555570;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    #fade-btn {
+      width: 120px;
+      padding: 10px 0;
+      border: 1px solid #2a2a44;
+      border-radius: 6px;
+      background: #141428;
+      color: #555570;
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+    #fade-btn.on {
+      background: #1a2a4a;
+      color: #7aabff;
+      border-color: #3a5a8a;
+    }
+    #add-slice-btn {
+      width: 120px;
+      padding: 10px 0;
+      border: 1px solid #2a2a44;
+      border-radius: 6px;
+      background: #141428;
+      color: #555570;
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+    #add-slice-btn.on {
+      background: #2a1414;
+      color: #ff6060;
+      border-color: #7a3030;
+    }
+    .ts-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    #ts-input {
+      width: 58px;
+      padding: 6px 4px;
+      background: #141428;
+      color: #d0d0d0;
+      border: 1px solid #2a2a44;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      text-align: right;
+    }
+    .ts-unit {
+      font-size: 0.8rem;
+      color: #555570;
+    }
+    .ts-btn {
+      padding: 6px 10px;
+      border: 1px solid #2a2a44;
+      border-radius: 6px;
+      background: #141428;
+      color: #555570;
+      font-size: 0.78rem;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+    .ts-btn:hover { background: #1a1a38; color: #9090cc; }
+    #ts-apply-btn.active {
+      background: #1a2a4a;
+      color: #7aabff;
+      border-color: #3a5a8a;
+    }
+  </style>
+</head>
+<body>
+  <span class="label">Playback</span>
+  <button id="fade-btn">Fade  OFF</button>
+  <span class="label">Edit</span>
+  <button id="add-slice-btn">Add Slice  OFF</button>
+  <span class="label">Timestretch</span>
+  <div class="ts-row">
+    <input type="number" id="ts-input" min="50" max="100" value="100" step="1" />
+    <span class="ts-unit">%</span>
+    <button id="ts-apply-btn" class="ts-btn">Apply</button>
+    <button id="ts-clear-btn" class="ts-btn">Clear</button>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>

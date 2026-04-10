@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Annotations</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0f0f1c;
+      color: #d0d0d0;
+      font-family: sans-serif;
+      font-size: 13px;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* ── ヘッダー ── */
+    #header {
+      padding: 9px 14px;
+      border-bottom: 1px solid #1e1e35;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    #file-name  { color: #7aabff; font-weight: bold; font-size: 0.82rem; }
+    #word-count { color: #555; font-size: 0.75rem; margin-left: auto; }
+
+    /* ── テーブルヘッダー（単語行） ── */
+    .table-head {
+      display: grid;
+      padding: 5px 14px;
+      border-bottom: 1px solid #1a1a2e;
+      flex-shrink: 0;
+      color: #505070;
+      font-size: 0.7rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      user-select: none;
+    }
+    .table-head.word-head {
+      grid-template-columns: 28px 1fr 72px 72px;
+    }
+
+    /* ── スクロールエリア ── */
+    #scroll-area {
+      flex: 1;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    #scroll-area::-webkit-scrollbar { width: 6px; }
+    #scroll-area::-webkit-scrollbar-track { background: #0a0a14; }
+    #scroll-area::-webkit-scrollbar-thumb { background: #2a2a44; border-radius: 3px; }
+
+    /* ── プレースホルダー ── */
+    #placeholder {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #2a2a40;
+      font-size: 0.82rem;
+      letter-spacing: 0.06em;
+    }
+
+    /* ── 単語グループ ── */
+    .word-group { border-bottom: 1px solid #141420; }
+
+    /* 単語行 */
+    .word-row {
+      display: grid;
+      grid-template-columns: 28px 1fr 72px 72px;
+      align-items: center;
+      padding: 7px 14px;
+      cursor: pointer;
+      user-select: none;
+      background: #0f0f1c;
+      transition: background 0.1s;
+    }
+    .word-row:hover { background: #161628; }
+
+    .toggle-icon {
+      color: #3a3a5c;
+      font-size: 0.7rem;
+      transition: transform 0.15s;
+      display: inline-block;
+    }
+    .word-group.open .toggle-icon { transform: rotate(90deg); color: #ffc83c; }
+
+    .word-text { color: #ffc83c; font-weight: bold; font-size: 0.88rem; }
+    .word-row .ts { color: #707090; font-size: 0.75rem; font-variant-numeric: tabular-nums; }
+
+    /* モーラテーブル */
+    .mora-table {
+      display: none;
+      background: #0a0a15;
+      border-top: 1px solid #141420;
+    }
+    .word-group.open .mora-table { display: block; }
+
+    .mora-table-head {
+      display: grid;
+      grid-template-columns: 28px 36px 1fr 72px 72px 56px 80px 40px;
+      padding: 4px 14px 4px 28px;
+      color: #505070;
+      font-size: 0.67rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-bottom: 1px solid #111120;
+    }
+
+    .mora-row {
+      display: grid;
+      grid-template-columns: 28px 36px 1fr 72px 72px 56px 80px 40px;
+      align-items: center;
+      padding: 5px 14px 5px 28px;
+      border-bottom: 1px solid #0e0e1a;
+    }
+    .mora-row:last-child { border-bottom: none; }
+    .mora-row:hover { background: #0d0d1e; }
+
+    .mora-id   { color: #585878; font-size: 0.72rem; font-variant-numeric: tabular-nums; }
+    .mora-text { color: #50beff; font-size: 0.88rem; }
+    .mora-ts   { color: #8888aa; font-size: 0.72rem; font-variant-numeric: tabular-nums; }
+    .mora-dur  { color: #6a9a6a; font-size: 0.72rem; font-variant-numeric: tabular-nums; }
+
+    /* アタック列 */
+    .mora-attack           { font-size: 0.72rem; font-variant-numeric: tabular-nums; color: #444460; }
+    .mora-attack.detected  { color: #ff9a50; }   /* 検出成功: オレンジ */
+    .mora-attack.fallback  { color: #555570; }   /* フォールバック: 控えめ */
+
+    /* grid_count 列 */
+    .mora-grid { font-size: 0.72rem; font-variant-numeric: tabular-nums; color: #8888aa; }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <span id="file-name">—</span>
+    <span id="word-count"></span>
+  </div>
+
+  <div class="table-head word-head">
+    <span></span>
+    <span>単語</span>
+    <span>start</span>
+    <span>end</span>
+  </div>
+
+  <div id="scroll-area">
+    <div id="placeholder">win1 にオーディオをドロップすると表示されます</div>
+    <div id="word-list" style="display:none"></div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,900 @@
+{
+  "source": "001",
+  "attacks": [
+    {
+      "word_id": 1,
+      "mora_id": 1,
+      "attackSec": 0.3628511322247825,
+      "isFallback": false
+    },
+    {
+      "word_id": 1,
+      "mora_id": 2,
+      "attackSec": 0.47,
+      "isFallback": false
+    },
+    {
+      "word_id": 1,
+      "mora_id": 3,
+      "attackSec": 0.6373125,
+      "isFallback": false
+    },
+    {
+      "word_id": 1,
+      "mora_id": 4,
+      "attackSec": 0.77,
+      "isFallback": false,
+      "grid_count": 1
+    },
+    {
+      "word_id": 1,
+      "mora_id": 5,
+      "attackSec": 0.86,
+      "isFallback": false,
+      "grid_count": 1
+    },
+    {
+      "word_id": 1,
+      "mora_id": 6,
+      "attackSec": 0.9212360120920606,
+      "isFallback": false,
+      "grid_count": 1
+    },
+    {
+      "word_id": 1,
+      "mora_id": 7,
+      "attackSec": 1.09,
+      "isFallback": false,
+      "grid_count": 1
+    },
+    {
+      "word_id": 1,
+      "mora_id": 8,
+      "attackSec": 1.13,
+      "isFallback": false,
+      "grid_count": 1
+    },
+    {
+      "word_id": 2,
+      "mora_id": 1,
+      "attackSec": 1.282429111145197,
+      "isFallback": false,
+      "grid_count": 1
+    },
+    {
+      "word_id": 3,
+      "mora_id": 1,
+      "attackSec": 1.994324931170005,
+      "isFallback": false,
+      "grid_count": 1
+    },
+    {
+      "word_id": 3,
+      "mora_id": 2,
+      "attackSec": 2.156645833333333,
+      "isFallback": false
+    },
+    {
+      "word_id": 3,
+      "mora_id": 3,
+      "attackSec": 2.252666666666667,
+      "isFallback": false
+    },
+    {
+      "word_id": 4,
+      "mora_id": 1,
+      "attackSec": 2.428,
+      "isFallback": false
+    },
+    {
+      "word_id": 5,
+      "mora_id": 1,
+      "attackSec": 2.4726666666666666,
+      "isFallback": false
+    },
+    {
+      "word_id": 5,
+      "mora_id": 2,
+      "attackSec": 2.67,
+      "isFallback": false
+    },
+    {
+      "word_id": 5,
+      "mora_id": 3,
+      "attackSec": 2.8526666666666665,
+      "isFallback": false
+    },
+    {
+      "word_id": 5,
+      "mora_id": 4,
+      "attackSec": 2.88,
+      "isFallback": false,
+      "grid_count": 1
+    },
+    {
+      "word_id": 5,
+      "mora_id": 5,
+      "attackSec": 3.01,
+      "isFallback": false,
+      "grid_count": 1
+    },
+    {
+      "word_id": 6,
+      "mora_id": 1,
+      "attackSec": 3.918339441608497,
+      "isFallback": false,
+      "grid_count": 1
+    },
+    {
+      "word_id": 6,
+      "mora_id": 2,
+      "attackSec": 4.03,
+      "isFallback": false,
+      "grid_count": 1
+    },
+    {
+      "word_id": 7,
+      "mora_id": 1,
+      "attackSec": 4.207444076608577,
+      "isFallback": false,
+      "grid_count": 1
+    },
+    {
+      "word_id": 7,
+      "mora_id": 2,
+      "attackSec": 4.3213333333333335,
+      "isFallback": false
+    },
+    {
+      "word_id": 7,
+      "mora_id": 3,
+      "attackSec": 4.412645833333333,
+      "isFallback": false
+    },
+    {
+      "word_id": 7,
+      "mora_id": 4,
+      "attackSec": 4.555979166666667,
+      "isFallback": false
+    },
+    {
+      "word_id": 8,
+      "mora_id": 1,
+      "attackSec": 4.75,
+      "isFallback": false
+    },
+    {
+      "word_id": 9,
+      "mora_id": 1,
+      "attackSec": 4.998666666666667,
+      "isFallback": false
+    },
+    {
+      "word_id": 9,
+      "mora_id": 2,
+      "attackSec": 5.090645833333333,
+      "isFallback": false
+    },
+    {
+      "word_id": 9,
+      "mora_id": 3,
+      "attackSec": 5.28,
+      "isFallback": false
+    },
+    {
+      "word_id": 9,
+      "mora_id": 4,
+      "attackSec": 5.448666666666667,
+      "isFallback": false
+    },
+    {
+      "word_id": 10,
+      "mora_id": 1,
+      "attackSec": 5.617333333333334,
+      "isFallback": false
+    },
+    {
+      "word_id": 10,
+      "mora_id": 2,
+      "attackSec": 5.726,
+      "isFallback": false
+    },
+    {
+      "word_id": 10,
+      "mora_id": 3,
+      "attackSec": 5.866,
+      "isFallback": false
+    },
+    {
+      "word_id": 10,
+      "mora_id": 4,
+      "attackSec": 5.934666666666667,
+      "isFallback": false
+    },
+    {
+      "word_id": 10,
+      "mora_id": 5,
+      "attackSec": 5.986666666666666,
+      "isFallback": false
+    },
+    {
+      "word_id": 11,
+      "mora_id": 1,
+      "attackSec": 6.0953333333333335,
+      "isFallback": false
+    },
+    {
+      "word_id": 12,
+      "mora_id": 1,
+      "attackSec": 6.1513333333333335,
+      "isFallback": false
+    },
+    {
+      "word_id": 12,
+      "mora_id": 2,
+      "attackSec": 6.352666666666667,
+      "isFallback": false
+    },
+    {
+      "word_id": 12,
+      "mora_id": 3,
+      "attackSec": 6.559333333333333,
+      "isFallback": false
+    },
+    {
+      "word_id": 12,
+      "mora_id": 4,
+      "attackSec": 6.565333333333333,
+      "isFallback": false
+    },
+    {
+      "word_id": 12,
+      "mora_id": 5,
+      "attackSec": 6.674,
+      "isFallback": false
+    },
+    {
+      "word_id": 13,
+      "mora_id": 1,
+      "attackSec": 6.731333333333334,
+      "isFallback": false
+    },
+    {
+      "word_id": 13,
+      "mora_id": 2,
+      "attackSec": 6.916,
+      "isFallback": false
+    },
+    {
+      "word_id": 14,
+      "mora_id": 1,
+      "attackSec": 6.999333333333333,
+      "isFallback": false
+    },
+    {
+      "word_id": 15,
+      "mora_id": 1,
+      "attackSec": 7.784666666666666,
+      "isFallback": false
+    },
+    {
+      "word_id": 15,
+      "mora_id": 2,
+      "attackSec": 7.866666666666666,
+      "isFallback": false
+    },
+    {
+      "word_id": 16,
+      "mora_id": 1,
+      "attackSec": 8.1913125,
+      "isFallback": false
+    },
+    {
+      "word_id": 17,
+      "mora_id": 1,
+      "attackSec": 8.430666666666667,
+      "isFallback": false
+    },
+    {
+      "word_id": 18,
+      "mora_id": 1,
+      "attackSec": 8.6913125,
+      "isFallback": false
+    },
+    {
+      "word_id": 18,
+      "mora_id": 2,
+      "attackSec": 8.734,
+      "isFallback": false
+    },
+    {
+      "word_id": 18,
+      "mora_id": 3,
+      "attackSec": 8.8513125,
+      "isFallback": false
+    },
+    {
+      "word_id": 18,
+      "mora_id": 4,
+      "attackSec": 8.962666666666667,
+      "isFallback": false
+    },
+    {
+      "word_id": 18,
+      "mora_id": 5,
+      "attackSec": 9.136,
+      "isFallback": false
+    },
+    {
+      "word_id": 20,
+      "mora_id": 1,
+      "attackSec": 9.2933125,
+      "isFallback": false
+    },
+    {
+      "word_id": 20,
+      "mora_id": 2,
+      "attackSec": 9.398666666666667,
+      "isFallback": false
+    },
+    {
+      "word_id": 20,
+      "mora_id": 3,
+      "attackSec": 9.5713125,
+      "isFallback": false
+    },
+    {
+      "word_id": 21,
+      "mora_id": 1,
+      "attackSec": 9.671333333333333,
+      "isFallback": false
+    },
+    {
+      "word_id": 21,
+      "mora_id": 2,
+      "attackSec": 9.726,
+      "isFallback": false
+    },
+    {
+      "word_id": 21,
+      "mora_id": 3,
+      "attackSec": 9.774,
+      "isFallback": false
+    },
+    {
+      "word_id": 22,
+      "mora_id": 1,
+      "attackSec": 9.885979166666667,
+      "isFallback": false
+    },
+    {
+      "word_id": 23,
+      "mora_id": 1,
+      "attackSec": 10.03,
+      "isFallback": false
+    },
+    {
+      "word_id": 24,
+      "mora_id": 1,
+      "attackSec": 10.624666666666666,
+      "isFallback": false
+    },
+    {
+      "word_id": 24,
+      "mora_id": 2,
+      "attackSec": 10.652666666666667,
+      "isFallback": false
+    },
+    {
+      "word_id": 24,
+      "mora_id": 3,
+      "attackSec": 10.74,
+      "isFallback": true
+    },
+    {
+      "word_id": 24,
+      "mora_id": 4,
+      "attackSec": 10.862,
+      "isFallback": false
+    },
+    {
+      "word_id": 24,
+      "mora_id": 5,
+      "attackSec": 10.932,
+      "isFallback": false
+    },
+    {
+      "word_id": 24,
+      "mora_id": 6,
+      "attackSec": 11.057333333333334,
+      "isFallback": false
+    },
+    {
+      "word_id": 24,
+      "mora_id": 7,
+      "attackSec": 11.119333333333334,
+      "isFallback": false
+    },
+    {
+      "word_id": 25,
+      "mora_id": 1,
+      "attackSec": 11.222,
+      "isFallback": false
+    },
+    {
+      "word_id": 25,
+      "mora_id": 2,
+      "attackSec": 11.291333333333334,
+      "isFallback": false
+    },
+    {
+      "word_id": 25,
+      "mora_id": 3,
+      "attackSec": 11.489333333333333,
+      "isFallback": false
+    },
+    {
+      "word_id": 25,
+      "mora_id": 4,
+      "attackSec": 11.500666666666667,
+      "isFallback": false
+    },
+    {
+      "word_id": 26,
+      "mora_id": 1,
+      "attackSec": 11.771333333333333,
+      "isFallback": false
+    },
+    {
+      "word_id": 26,
+      "mora_id": 2,
+      "attackSec": 11.847333333333333,
+      "isFallback": false
+    },
+    {
+      "word_id": 26,
+      "mora_id": 3,
+      "attackSec": 13.137333333333334,
+      "isFallback": false
+    },
+    {
+      "word_id": 27,
+      "mora_id": 1,
+      "attackSec": 13.312,
+      "isFallback": false
+    },
+    {
+      "word_id": 27,
+      "mora_id": 2,
+      "attackSec": 13.341333333333333,
+      "isFallback": false
+    },
+    {
+      "word_id": 28,
+      "mora_id": 1,
+      "attackSec": 13.506666666666666,
+      "isFallback": false
+    },
+    {
+      "word_id": 29,
+      "mora_id": 1,
+      "attackSec": 13.614,
+      "isFallback": false
+    },
+    {
+      "word_id": 29,
+      "mora_id": 2,
+      "attackSec": 13.713333333333333,
+      "isFallback": false
+    },
+    {
+      "word_id": 29,
+      "mora_id": 3,
+      "attackSec": 13.886666666666667,
+      "isFallback": false
+    },
+    {
+      "word_id": 29,
+      "mora_id": 4,
+      "attackSec": 14.120666666666667,
+      "isFallback": false
+    },
+    {
+      "word_id": 30,
+      "mora_id": 1,
+      "attackSec": 14.292,
+      "isFallback": false
+    },
+    {
+      "word_id": 31,
+      "mora_id": 1,
+      "attackSec": 14.418,
+      "isFallback": false
+    },
+    {
+      "word_id": 31,
+      "mora_id": 2,
+      "attackSec": 14.45,
+      "isFallback": false
+    },
+    {
+      "word_id": 31,
+      "mora_id": 3,
+      "attackSec": 14.610666666666667,
+      "isFallback": false
+    },
+    {
+      "word_id": 32,
+      "mora_id": 1,
+      "attackSec": 14.678,
+      "isFallback": false
+    },
+    {
+      "word_id": 33,
+      "mora_id": 1,
+      "attackSec": 14.794,
+      "isFallback": false
+    },
+    {
+      "word_id": 33,
+      "mora_id": 2,
+      "attackSec": 14.866666666666667,
+      "isFallback": false
+    },
+    {
+      "word_id": 33,
+      "mora_id": 3,
+      "attackSec": 14.959333333333333,
+      "isFallback": false
+    },
+    {
+      "word_id": 33,
+      "mora_id": 4,
+      "attackSec": 15.018,
+      "isFallback": false
+    },
+    {
+      "word_id": 33,
+      "mora_id": 5,
+      "attackSec": 15.153333333333334,
+      "isFallback": false
+    },
+    {
+      "word_id": 33,
+      "mora_id": 6,
+      "attackSec": 15.251333333333333,
+      "isFallback": false
+    },
+    {
+      "word_id": 34,
+      "mora_id": 1,
+      "attackSec": 15.334,
+      "isFallback": false
+    },
+    {
+      "word_id": 34,
+      "mora_id": 2,
+      "attackSec": 15.498,
+      "isFallback": false
+    },
+    {
+      "word_id": 34,
+      "mora_id": 3,
+      "attackSec": 15.545333333333334,
+      "isFallback": false
+    },
+    {
+      "word_id": 35,
+      "mora_id": 1,
+      "attackSec": 15.848,
+      "isFallback": false
+    },
+    {
+      "word_id": 35,
+      "mora_id": 2,
+      "attackSec": 15.944666666666667,
+      "isFallback": false
+    },
+    {
+      "word_id": 35,
+      "mora_id": 3,
+      "attackSec": 16.062,
+      "isFallback": false
+    },
+    {
+      "word_id": 35,
+      "mora_id": 4,
+      "attackSec": 16.141333333333332,
+      "isFallback": false
+    },
+    {
+      "word_id": 36,
+      "mora_id": 1,
+      "attackSec": 16.339333333333332,
+      "isFallback": false
+    },
+    {
+      "word_id": 36,
+      "mora_id": 2,
+      "attackSec": 16.454,
+      "isFallback": false
+    },
+    {
+      "word_id": 37,
+      "mora_id": 1,
+      "attackSec": 16.522,
+      "isFallback": false
+    },
+    {
+      "word_id": 37,
+      "mora_id": 2,
+      "attackSec": 16.712,
+      "isFallback": false
+    },
+    {
+      "word_id": 37,
+      "mora_id": 3,
+      "attackSec": 16.765333333333334,
+      "isFallback": false
+    },
+    {
+      "word_id": 38,
+      "mora_id": 1,
+      "attackSec": 16.948645833333334,
+      "isFallback": false
+    },
+    {
+      "word_id": 39,
+      "mora_id": 1,
+      "attackSec": 17.010666666666665,
+      "isFallback": false
+    },
+    {
+      "word_id": 39,
+      "mora_id": 2,
+      "attackSec": 17.226,
+      "isFallback": false
+    },
+    {
+      "word_id": 39,
+      "mora_id": 3,
+      "attackSec": 17.278,
+      "isFallback": false
+    },
+    {
+      "word_id": 39,
+      "mora_id": 4,
+      "attackSec": 17.295333333333332,
+      "isFallback": false
+    },
+    {
+      "word_id": 40,
+      "mora_id": 1,
+      "attackSec": 17.904666666666667,
+      "isFallback": false
+    },
+    {
+      "word_id": 40,
+      "mora_id": 2,
+      "attackSec": 17.921333333333333,
+      "isFallback": false
+    },
+    {
+      "word_id": 40,
+      "mora_id": 3,
+      "attackSec": 18.02,
+      "isFallback": true
+    },
+    {
+      "word_id": 40,
+      "mora_id": 4,
+      "attackSec": 18.122645833333333,
+      "isFallback": false
+    },
+    {
+      "word_id": 40,
+      "mora_id": 5,
+      "attackSec": 18.161333333333335,
+      "isFallback": false
+    },
+    {
+      "word_id": 40,
+      "mora_id": 6,
+      "attackSec": 18.358666666666668,
+      "isFallback": false
+    },
+    {
+      "word_id": 40,
+      "mora_id": 7,
+      "attackSec": 18.397333333333332,
+      "isFallback": false
+    },
+    {
+      "word_id": 41,
+      "mora_id": 1,
+      "attackSec": 18.537333333333333,
+      "isFallback": false
+    },
+    {
+      "word_id": 41,
+      "mora_id": 2,
+      "attackSec": 18.59197916666667,
+      "isFallback": false
+    },
+    {
+      "word_id": 41,
+      "mora_id": 3,
+      "attackSec": 18.762,
+      "isFallback": false
+    },
+    {
+      "word_id": 41,
+      "mora_id": 4,
+      "attackSec": 18.783333333333335,
+      "isFallback": false
+    },
+    {
+      "word_id": 42,
+      "mora_id": 1,
+      "attackSec": 18.998,
+      "isFallback": false
+    },
+    {
+      "word_id": 42,
+      "mora_id": 2,
+      "attackSec": 19.023333333333333,
+      "isFallback": false
+    },
+    {
+      "word_id": 42,
+      "mora_id": 3,
+      "attackSec": 19.0973125,
+      "isFallback": false
+    },
+    {
+      "word_id": 42,
+      "mora_id": 4,
+      "attackSec": 19.216,
+      "isFallback": false
+    },
+    {
+      "word_id": 42,
+      "mora_id": 5,
+      "attackSec": 19.275333333333332,
+      "isFallback": false
+    },
+    {
+      "word_id": 42,
+      "mora_id": 6,
+      "attackSec": 19.448645833333334,
+      "isFallback": false
+    },
+    {
+      "word_id": 44,
+      "mora_id": 1,
+      "attackSec": 19.844,
+      "isFallback": false
+    },
+    {
+      "word_id": 44,
+      "mora_id": 2,
+      "attackSec": 19.864,
+      "isFallback": false
+    },
+    {
+      "word_id": 44,
+      "mora_id": 3,
+      "attackSec": 19.958666666666666,
+      "isFallback": false
+    },
+    {
+      "word_id": 44,
+      "mora_id": 4,
+      "attackSec": 19.980666666666668,
+      "isFallback": false
+    },
+    {
+      "word_id": 45,
+      "mora_id": 1,
+      "attackSec": 20.148666666666667,
+      "isFallback": false
+    },
+    {
+      "word_id": 45,
+      "mora_id": 2,
+      "attackSec": 20.308666666666667,
+      "isFallback": false
+    },
+    {
+      "word_id": 46,
+      "mora_id": 1,
+      "attackSec": 20.354,
+      "isFallback": false
+    },
+    {
+      "word_id": 46,
+      "mora_id": 2,
+      "attackSec": 20.487333333333332,
+      "isFallback": false
+    },
+    {
+      "word_id": 46,
+      "mora_id": 3,
+      "attackSec": 20.558,
+      "isFallback": false
+    },
+    {
+      "word_id": 46,
+      "mora_id": 4,
+      "attackSec": 20.677333333333333,
+      "isFallback": false
+    },
+    {
+      "word_id": 46,
+      "mora_id": 5,
+      "attackSec": 20.733333333333334,
+      "isFallback": false
+    },
+    {
+      "word_id": 47,
+      "mora_id": 1,
+      "attackSec": 20.807979166666666,
+      "isFallback": false
+    },
+    {
+      "word_id": 47,
+      "mora_id": 2,
+      "attackSec": 20.968,
+      "isFallback": false
+    },
+    {
+      "word_id": 47,
+      "mora_id": 3,
+      "attackSec": 21.00733333333333,
+      "isFallback": false
+    },
+    {
+      "word_id": 47,
+      "mora_id": 4,
+      "attackSec": 21.216666666666665,
+      "isFallback": false
+    },
+    {
+      "word_id": 48,
+      "mora_id": 1,
+      "attackSec": 21.305333333333333,
+      "isFallback": false
+    },
+    {
+      "word_id": 48,
+      "mora_id": 2,
+      "attackSec": 21.352666666666668,
+      "isFallback": false
+    },
+    {
+      "word_id": 5,
+      "mora_id": 6,
+      "attackSec": 3.722214699097212,
+      "isFallback": false,
+      "grid_count": 1
+    }
+  ],
+  "addedMoras": [
+    {
+      "word_id": 5,
+      "prevMoraId": 5,
+      "mora": {
+        "slice_id": 19,
+        "mora_id": 6,
+        "text": "あ",
+        "start": 3.082810801069965,
+        "end": 3.84,
+        "duration": 0.757189198930035,
+        "rms": 0.02877,
+        "f0": 97.37,
+        "spectral_centroid": 1505.06,
+        "zcr": 0.01326
+      }
+    }
+  ]
+}
