@@ -10,14 +10,15 @@ let pendingDragFile = null;
 let currentLoadedName = null;
 let autoImportDone    = false;     // 自動 import は最初の1回だけ
 const attacksCache    = new Map(); // `${word_id}_${mora_id}` → attack オブジェクト
-let addedMorasCache   = [];        // Add Slice で追加したモーラ構造
+let addedMorasCache      = [];     // Add Slice で追加したモーラ構造
+let moraEndUpdatesCache  = [];     // 隙間挿入で trimされたmoraのend更新
 
 const ASSETS_ROOT = path.join(__dirname, '../../assets');
 
 function saveMora() {
   if (!currentLoadedName || attacksCache.size === 0) return;
   const attacks  = Array.from(attacksCache.values());
-  const data     = { source: currentLoadedName, attacks, addedMoras: addedMorasCache };
+  const data     = { source: currentLoadedName, attacks, addedMoras: addedMorasCache, moraEndUpdates: moraEndUpdatesCache };
   const moraDir  = path.join(ASSETS_ROOT, 'mora');
   if (!fs.existsSync(moraDir)) fs.mkdirSync(moraDir);
   const moraPath = path.join(moraDir, currentLoadedName + '.mora');
@@ -47,9 +48,11 @@ function importMora() {
 
     // キャッシュも更新
     attacksCache.clear();
-    addedMorasCache = [];
+    addedMorasCache     = [];
+    moraEndUpdatesCache = [];
     for (const a of attacks) attacksCache.set(`${a.word_id}_${a.mora_id}`, a);
-    addedMorasCache = data.addedMoras || [];
+    addedMorasCache     = data.addedMoras     || [];
+    moraEndUpdatesCache = data.moraEndUpdates || [];
 
     const win3 = getWin3();
     const win4 = getWin4();
@@ -57,6 +60,13 @@ function importMora() {
     if (restoreItems.length > 0) {
       if (win3) win3.webContents.send('restore-added-moras', restoreItems);
       if (win4) win4.webContents.send('restore-added-moras', restoreItems);
+    }
+    const endUpdates = data.moraEndUpdates || [];
+    if (endUpdates.length > 0) {
+      if (win3) win3.webContents.send('restore-mora-end-updates', endUpdates);
+      for (const u of endUpdates) {
+        if (win4) win4.webContents.send('mora-end-updated', u);
+      }
     }
     if (win3) win3.webContents.send('restore-attacks', attacks);
     if (win4) win4.webContents.send('show-attacks', attacks);
@@ -167,7 +177,8 @@ function registerIpcHandlers() {
     currentLoadedName = baseName;
     autoImportDone    = false;
     attacksCache.clear();
-    addedMorasCache   = [];
+    addedMorasCache      = [];
+    moraEndUpdatesCache  = [];
 
     let annotations = null;
     const jsonPath = path.join(ASSETS_ROOT, 'json', baseName + '.json');
@@ -217,6 +228,13 @@ function registerIpcHandlers() {
     }
   });
 
+  // win3 → main → win4: moraのend更新通知の中継・保存
+  ipcMain.on('mora-end-updated', (_event, payload) => {
+    moraEndUpdatesCache.push(payload);
+    const win4 = getWin4();
+    if (win4) win4.webContents.send('mora-end-updated', payload);
+  });
+
   // win3 → main → win4: 新モーラ追加通知の中継・保存
   ipcMain.on('mora-added', (_event, payload) => {
     const { word_id, prevMoraId, mora } = payload;
@@ -241,7 +259,8 @@ function registerIpcHandlers() {
         const fileData   = JSON.parse(fs.readFileSync(moraPath, 'utf8'));
         const saved      = fileData.attacks || [];
         attacksCache.clear();
-        addedMorasCache = fileData.addedMoras || [];
+        addedMorasCache     = fileData.addedMoras     || [];
+        moraEndUpdatesCache = fileData.moraEndUpdates || [];
         for (const a of saved) attacksCache.set(`${a.word_id}_${a.mora_id}`, a);
         const win3 = getWin3();
         const win4 = getWin4();
@@ -249,6 +268,13 @@ function registerIpcHandlers() {
         if (restoreItems.length > 0) {
           if (win3) win3.webContents.send('restore-added-moras', restoreItems);
           if (win4) win4.webContents.send('restore-added-moras', restoreItems);
+        }
+        const endUpdates = fileData.moraEndUpdates || [];
+        if (endUpdates.length > 0) {
+          if (win3) win3.webContents.send('restore-mora-end-updates', endUpdates);
+          for (const u of endUpdates) {
+            if (win4) win4.webContents.send('mora-end-updated', u);
+          }
         }
         if (win3) win3.webContents.send('restore-attacks', saved);
         if (win4) win4.webContents.send('show-attacks', saved);

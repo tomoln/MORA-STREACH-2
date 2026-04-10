@@ -70,7 +70,7 @@ function detectAttacks(audioBuffer, annotations) {
     for (const mora of word.moras) {
       const key       = `${word.word_id}_${mora.mora_id}`;
       const startSamp = Math.floor(mora.start * sr);
-      const endSamp   = Math.min(Math.floor(mora.end * sr), total);
+      const endSamp   = Math.min(Math.floor((mora.start + 0.1) * sr), Math.floor(mora.end * sr), total);
 
       // フレームが 2 つ未満なら元の start をそのまま使う
       if (endSamp - startSamp < FRAME_SIZE * 2) {
@@ -541,13 +541,26 @@ window.api.onRestoreAddedMoras((items) => {
     // 既に挿入済みならスキップ
     if (word.moras.some(m => m.mora_id === mora.mora_id)) continue;
     const prevIdx = word.moras.findIndex(m => m.mora_id === prevMoraId);
-    if (prevIdx < 0) continue;
+    if (prevIdx < 0 && prevMoraId !== 0) continue;
     word.moras.splice(prevIdx + 1, 0, { ...mora });
     const key = `${word_id}_${mora.mora_id}`;
     if (!currentAttacks)    currentAttacks    = new Map();
     if (!currentGridCounts) currentGridCounts = new Map();
     currentAttacks.set(key, attackSec);
     currentGridCounts.set(key, 1);
+  }
+  draw();
+});
+
+window.api.onRestoreMoraEndUpdates((updates) => {
+  if (!currentAnnotations) return;
+  for (const { word_id, mora_id, end, duration } of updates) {
+    const word = currentAnnotations.find(w => w.word_id === word_id);
+    if (!word) continue;
+    const mora = word.moras.find(m => m.mora_id === mora_id);
+    if (!mora) continue;
+    mora.end      = end;
+    mora.duration = duration;
   }
   draw();
 });
@@ -646,72 +659,82 @@ function playRegionAt(mouseX) {
   if (!currentBuffer || !currentAnnotations || !currentAttacks || !audioCtx) return;
   const clickSec = xToTimeSec(mouseX);
 
+  // clickSec を含む mora のうち attackSec が最大のものを選ぶ
+  // （隙間挿入で前のwordのmoraと重なる場合に新moraを優先するため）
+  let bestMora      = null;
+  let bestAttackSec = -Infinity;
   for (const word of currentAnnotations) {
     for (const mora of word.moras) {
       const key       = `${word.word_id}_${mora.mora_id}`;
       const attackSec = currentAttacks.get(key);
       if (attackSec === undefined) continue;
-      if (clickSec >= attackSec && clickSec < mora.end) {
-        if (playingSource) { try { playingSource.stop(); } catch {} }
-
-        if (timestrechRatio !== null) {
-          // タイムストレッチ: 元バッファから区間を抽出してオフライン処理
-          const sr        = currentBuffer.sampleRate;
-          const startSamp = Math.floor(attackSec * sr);
-          const endSamp   = Math.floor(mora.end * sr);
-          const channelsIn = [];
-          for (let ch = 0; ch < currentBuffer.numberOfChannels; ch++) {
-            channelsIn.push(currentBuffer.getChannelData(ch).slice(startSamp, endSamp));
-          }
-          const channelsOut   = stretchChannels(channelsIn, timestrechRatio);
-          const stretchedLen  = channelsOut[0].length;
-          const stretchedDur  = stretchedLen / sr;
-          const stretchedBuf  = audioCtx.createBuffer(channelsOut.length, stretchedLen, sr);
-          for (let ch = 0; ch < channelsOut.length; ch++) {
-            stretchedBuf.copyToChannel(channelsOut[ch], ch);
-          }
-
-          playingSource        = audioCtx.createBufferSource();
-          playingSource.buffer = stretchedBuf;
-
-          if (fadeEnabled && stretchedDur > 0.02) {
-            const gain = audioCtx.createGain();
-            const now  = audioCtx.currentTime;
-            const fSec = 0.01;
-            gain.gain.setValueAtTime(0, now);
-            gain.gain.linearRampToValueAtTime(1, now + fSec);
-            gain.gain.setValueAtTime(1, now + stretchedDur - fSec);
-            gain.gain.linearRampToValueAtTime(0, now + stretchedDur);
-            playingSource.connect(gain);
-            gain.connect(audioCtx.destination);
-          } else {
-            playingSource.connect(audioCtx.destination);
-          }
-          playingSource.start(0);
-        } else {
-          // 通常再生
-          const duration       = mora.end - attackSec;
-          playingSource        = audioCtx.createBufferSource();
-          playingSource.buffer = currentBuffer;
-
-          if (fadeEnabled && duration > 0.02) {
-            const gain  = audioCtx.createGain();
-            const now   = audioCtx.currentTime;
-            const fSec  = 0.01;
-            gain.gain.setValueAtTime(0, now);
-            gain.gain.linearRampToValueAtTime(1, now + fSec);
-            gain.gain.setValueAtTime(1, now + duration - fSec);
-            gain.gain.linearRampToValueAtTime(0, now + duration);
-            playingSource.connect(gain);
-            gain.connect(audioCtx.destination);
-          } else {
-            playingSource.connect(audioCtx.destination);
-          }
-          playingSource.start(0, attackSec, duration);
-        }
-        return;
+      if (clickSec >= attackSec && clickSec < mora.end && attackSec > bestAttackSec) {
+        bestMora      = mora;
+        bestAttackSec = attackSec;
       }
     }
+  }
+  if (!bestMora) return;
+
+  const mora      = bestMora;
+  const attackSec = bestAttackSec;
+
+  if (playingSource) { try { playingSource.stop(); } catch {} }
+
+  if (timestrechRatio !== null) {
+    // タイムストレッチ: 元バッファから区間を抽出してオフライン処理
+    const sr        = currentBuffer.sampleRate;
+    const startSamp = Math.floor(attackSec * sr);
+    const endSamp   = Math.floor(mora.end * sr);
+    const channelsIn = [];
+    for (let ch = 0; ch < currentBuffer.numberOfChannels; ch++) {
+      channelsIn.push(currentBuffer.getChannelData(ch).slice(startSamp, endSamp));
+    }
+    const channelsOut   = stretchChannels(channelsIn, timestrechRatio);
+    const stretchedLen  = channelsOut[0].length;
+    const stretchedDur  = stretchedLen / sr;
+    const stretchedBuf  = audioCtx.createBuffer(channelsOut.length, stretchedLen, sr);
+    for (let ch = 0; ch < channelsOut.length; ch++) {
+      stretchedBuf.copyToChannel(channelsOut[ch], ch);
+    }
+
+    playingSource        = audioCtx.createBufferSource();
+    playingSource.buffer = stretchedBuf;
+
+    if (fadeEnabled && stretchedDur > 0.02) {
+      const gain = audioCtx.createGain();
+      const now  = audioCtx.currentTime;
+      const fSec = 0.01;
+      gain.gain.setValueAtTime(0, now);
+      gain.gain.linearRampToValueAtTime(1, now + fSec);
+      gain.gain.setValueAtTime(1, now + stretchedDur - fSec);
+      gain.gain.linearRampToValueAtTime(0, now + stretchedDur);
+      playingSource.connect(gain);
+      gain.connect(audioCtx.destination);
+    } else {
+      playingSource.connect(audioCtx.destination);
+    }
+    playingSource.start(0);
+  } else {
+    // 通常再生
+    const duration       = mora.end - attackSec;
+    playingSource        = audioCtx.createBufferSource();
+    playingSource.buffer = currentBuffer;
+
+    if (fadeEnabled && duration > 0.02) {
+      const gain  = audioCtx.createGain();
+      const now   = audioCtx.currentTime;
+      const fSec  = 0.01;
+      gain.gain.setValueAtTime(0, now);
+      gain.gain.linearRampToValueAtTime(1, now + fSec);
+      gain.gain.setValueAtTime(1, now + duration - fSec);
+      gain.gain.linearRampToValueAtTime(0, now + duration);
+      playingSource.connect(gain);
+      gain.connect(audioCtx.destination);
+    } else {
+      playingSource.connect(audioCtx.destination);
+    }
+    playingSource.start(0, attackSec, duration);
   }
 }
 
@@ -723,7 +746,7 @@ function detectAttackForMora(mora) {
   const ch0      = currentBuffer.getChannelData(0);
   const total    = currentBuffer.length;
   const startSamp = Math.floor(mora.start * sr);
-  const endSamp   = Math.min(Math.floor(mora.end * sr), total);
+  const endSamp   = Math.min(Math.floor((mora.start + 0.1) * sr), Math.floor(mora.end * sr), total);
   if (endSamp - startSamp < FRAME_SIZE * 2) return mora.start;
 
   const frames = [];
@@ -788,6 +811,8 @@ function addSliceAt(mouseX) {
   // T を含む word と mora を探す
   let targetWord  = null;
   let prevMoraIdx = -1;
+  let isGapInsert = false;  // word内のmora隙間への挿入
+
   for (const word of currentAnnotations) {
     if (T < word.start || T > word.end) continue;
     for (let i = 0; i < word.moras.length; i++) {
@@ -795,8 +820,97 @@ function addSliceAt(mouseX) {
       if (T >= m.start && T <= m.end) { targetWord = word; prevMoraIdx = i; break; }
     }
     if (targetWord) break;
+    // word範囲内だがどのmoraにもヒットしなかった → 隙間挿入
+    targetWord  = word;
+    isGapInsert = true;
+    for (let i = word.moras.length - 1; i >= 0; i--) {
+      if (word.moras[i].end <= T) { prevMoraIdx = i; break; }
+    }
+    // prevMoraIdx = -1 のまま → T はすべてのmoraより前
+    break;
   }
-  if (!targetWord || prevMoraIdx < 0) return;
+
+  if (!targetWord) return;
+
+  if (isGapInsert) {
+    // ── 隙間挿入: prevMoraは切り詰めない ──
+    const maxMoraId    = Math.max(...targetWord.moras.map(m => m.mora_id));
+    const newMoraId    = maxMoraId + 1;
+    const nextMora     = targetWord.moras[prevMoraIdx + 1] ?? null;
+    const newEnd       = nextMora ? nextMora.start : targetWord.end;
+    const refMora      = prevMoraIdx >= 0 ? targetWord.moras[prevMoraIdx] : targetWord.moras[0];
+    const prevMoraRef  = prevMoraIdx >= 0 ? targetWord.moras[prevMoraIdx] : null;
+
+    const newMora = {
+      slice_id:          refMora.slice_id + (prevMoraIdx >= 0 ? 1 : 0),
+      mora_id:           newMoraId,
+      text:              '',
+      start:             T,
+      end:               newEnd,
+      duration:          newEnd - T,
+      rms:               refMora.rms,
+      f0:                refMora.f0,
+      spectral_centroid: refMora.spectral_centroid,
+      zcr:               refMora.zcr,
+    };
+    // prevMoraIdx + 1 が 0 になる場合（-1+1=0）も正しく先頭挿入される
+    targetWord.moras.splice(prevMoraIdx + 1, 0, newMora);
+
+    // T をまたいでいるmora（start < T < end）のendをTに更新
+    let trimmedMora     = null;
+    let trimmedWordId   = null;
+    for (const word of currentAnnotations) {
+      for (const mora of word.moras) {
+        if (mora === newMora) continue;
+        if (mora.start < T && mora.end > T) {
+          mora.end      = T;
+          mora.duration = T - mora.start;
+          trimmedMora   = mora;
+          trimmedWordId = word.word_id;
+          break;
+        }
+      }
+      if (trimmedMora) break;
+    }
+
+    const newKey    = `${targetWord.word_id}_${newMoraId}`;
+    const newAttack = detectAttackForMora(newMora);
+    currentAttacks.set(newKey, newAttack);
+    currentGridCounts.set(newKey, 1);
+    draw();
+
+    const cx = (timeSecToX(newAttack) + timeSecToX(newEnd)) / 2;
+    const cy = _waveH / 2;
+    showTextInput(cx, cy, (text) => {
+      newMora.text = text;
+      draw();
+      window.api.sendAttacks([{
+        word_id:    targetWord.word_id,
+        mora_id:    newMoraId,
+        attackSec:  newAttack,
+        isFallback: false,
+        grid_count: 1,
+      }]);
+      if (trimmedMora) {
+        window.api.sendMoraEndUpdated({
+          word_id:  trimmedWordId,
+          mora_id:  trimmedMora.mora_id,
+          end:      trimmedMora.end,
+          duration: trimmedMora.duration,
+        });
+      }
+      window.api.sendMoraAdded({
+        word_id:    targetWord.word_id,
+        prevMoraId: prevMoraRef ? prevMoraRef.mora_id : 0,
+        mora:       { ...newMora },
+        attackSec:  newAttack,
+      });
+    });
+    return;
+  }
+
+  // ── 通常ケース: T が mora 内にある ──
+  if (prevMoraIdx < 0) return;
 
   const prevMora = targetWord.moras[prevMoraIdx];
   const origEnd  = prevMora.end;

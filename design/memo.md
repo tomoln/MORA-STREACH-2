@@ -8,7 +8,9 @@ git add .
 git commit -m "initial commit"
 
 # コマンドから GitHub リポジトリを作成
-gh repo create OTOMORA-D --public --source=. --remote=origin
+gh repo create MORA-STREACH-2 --public --source=. --remote=origin
 
 # GitHub に push
-git push -u origin main
+git add .
+git commit -m "update"
+git push

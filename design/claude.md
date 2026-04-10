@@ -43,11 +43,15 @@ win2 drag → win1 drop
   ],
   "addedMoras": [
     { "word_id": 1, "prevMoraId": 2, "mora": { "mora_id": 5, "text": "ん", "start": 0.72, "end": 0.85, ... } }
+  ],
+  "moraEndUpdates": [
+    { "word_id": 1, "mora_id": 3, "end": 0.65, "duration": 0.12 }
   ]
 }
 ```
 
 - `addedMoras`: Add Slice で追加したモーラ構造。復元時に先に挿入してから attacks を適用する。
+- `moraEndUpdates`: 隙間挿入時にトリムされたmoraのend更新。復元順序: restore-added-moras → restore-mora-end-updates → restore-attacks。
 - rms / f0 / spectral_centroid / zcr は追加時に1つ前のモーラの値を引き継ぐ。
 
 ---
@@ -69,12 +73,24 @@ win2 drag → win1 drop
 - win3 波形中央に白数字で表示。クリックサイクル: `1 → 0 → 3 → 2 → 1`
 - .mora に保存・復元される。
 
+**RMS オンセット検出**
+- `detectAttacks()` / `detectAttackForMora()`: スキャン範囲は `mora.start ～ mora.start + 0.1s`（mora.end でクリップ）
+- スキャン範囲内で RMS 上昇量が最大のフレームをアタックポイントとする
+- 上昇量が MIN_GRADIENT(0.01) 未満なら mora.start にフォールバック
+
 **Add Slice モード**
 - win5 ボタン ON → win3 背景が赤系に変わる
-- win3 でクリック → prevMora を T で切り詰め、新モーラを `[T, 元end]` で挿入
+- win3 でクリック位置 T を判定:
+  - **通常ケース**: T が mora.start～mora.end 内 → prevMora を T で切り詰め、新モーラを `[T, 元end]` で挿入
+  - **隙間挿入ケース**: T が word 範囲内だがどの mora にもヒットしない → prevMora を切り詰めず、`[T, 次mora.start or word.end]` で挿入。T をまたぐ mora（他word含む）があればその end を T に更新（`moraEndUpdates` に保存）
+- `prevMoraId=0` は「そのwordの先頭に挿入」を意味する（win3/win4 の restore で先頭挿入として処理）
 - 新モーラの attack は RMS 検出（`detectAttackForMora`）、grid_count=1
 - テキスト入力オーバーレイ（赤枠 input）で mora.text を設定
 - IPC `mora-added` で main の `addedMorasCache` に保存 → win4 に行挿入
+- IPC `mora-end-updated` で main の `moraEndUpdatesCache` に保存 → win4 の end/duration 表示を更新
+
+**playRegionAt（win3 クリック再生）**
+- クリック位置を含む mora が複数ある場合（隙間挿入による時間重複）、attackSec が最大の mora を優先して再生
 
 **Timestretch**
 - win5 の数値入力（50〜100%）+ Apply / Clear ボタン

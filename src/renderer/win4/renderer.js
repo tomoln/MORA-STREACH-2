@@ -71,7 +71,6 @@ window.api.onShowAnnotations(({ name, annotations }) => {
 window.api.onRestoreAddedMoras((items) => {
   for (const item of items) {
     const prevRow = wordList.querySelector(`.mora-row[data-key="${item.word_id}_${item.prevMoraId}"]`);
-    if (!prevRow) continue;
     if (wordList.querySelector(`.mora-row[data-key="${item.word_id}_${item.mora.mora_id}"]`)) continue;
     const row = document.createElement('div');
     row.className  = 'mora-row';
@@ -86,14 +85,29 @@ window.api.onRestoreAddedMoras((items) => {
       <span class="mora-attack detected">${fmt(item.attackSec)}</span>
       <span class="mora-grid">1</span>
     `;
-    prevRow.insertAdjacentElement('afterend', row);
+    if (prevRow) {
+      prevRow.insertAdjacentElement('afterend', row);
+    } else {
+      // prevMoraId=0: wordの先頭moraの前に挿入
+      const firstRow = wordList.querySelector(`.mora-row[data-key^="${item.word_id}_"]`);
+      if (!firstRow) continue;
+      firstRow.insertAdjacentElement('beforebegin', row);
+    }
   }
+});
+
+window.api.onMoraEndUpdated(({ word_id, mora_id, end, duration }) => {
+  const row = wordList.querySelector(`.mora-row[data-key="${word_id}_${mora_id}"]`);
+  if (!row) return;
+  const endEl = row.querySelector('.mora-ts:nth-child(5)');
+  const durEl = row.querySelector('.mora-dur');
+  if (endEl) endEl.textContent = fmt(end);
+  if (durEl) durEl.textContent = `${(duration * 1000).toFixed(0)}ms`;
 });
 
 window.api.onMoraAdded(({ word_id, prevMoraId, mora, attackSec }) => {
   // prevMora の行を探し、その直後に新モーラ行を挿入
   const prevRow = wordList.querySelector(`.mora-row[data-key="${word_id}_${prevMoraId}"]`);
-  if (!prevRow) return;
 
   const row = document.createElement('div');
   row.className = 'mora-row';
@@ -108,7 +122,15 @@ window.api.onMoraAdded(({ word_id, prevMoraId, mora, attackSec }) => {
     <span class="mora-attack detected">${fmt(attackSec)}</span>
     <span class="mora-grid">1</span>
   `;
-  prevRow.insertAdjacentElement('afterend', row);
+
+  if (prevRow) {
+    prevRow.insertAdjacentElement('afterend', row);
+  } else {
+    // prevMoraId=0: wordの先頭moraの前に挿入
+    const firstRow = wordList.querySelector(`.mora-row[data-key^="${word_id}_"]`);
+    if (!firstRow) return;
+    firstRow.insertAdjacentElement('beforebegin', row);
+  }
 });
 
 window.api.onShowAttacks((attacks) => {

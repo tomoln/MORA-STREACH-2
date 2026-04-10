@@ -1,0 +1,2382 @@
+[
+  {
+    "word_id": 1,
+    "word": "血管",
+    "start": 0.38,
+    "end": 0.76,
+    "moras": [
+      {
+        "slice_id": 1,
+        "mora_id": 1,
+        "text": "け",
+        "start": 0.38,
+        "end": 0.52,
+        "duration": 0.14,
+        "rms": 0.09456,
+        "f0": 82.13,
+        "spectral_centroid": 3942.43,
+        "zcr": 0.0933
+      },
+      {
+        "slice_id": 2,
+        "mora_id": 2,
+        "text": "か",
+        "start": 0.52,
+        "end": 0.69,
+        "duration": 0.17,
+        "rms": 0.12128,
+        "f0": 92.75,
+        "spectral_centroid": 2645.46,
+        "zcr": 0.05645
+      },
+      {
+        "slice_id": 3,
+        "mora_id": 3,
+        "text": "ん",
+        "start": 0.69,
+        "end": 0.76,
+        "duration": 0.07,
+        "rms": 0.14911,
+        "f0": 100.32,
+        "spectral_centroid": 2651.29,
+        "zcr": 0.02755
+      }
+    ]
+  },
+  {
+    "word_id": 2,
+    "word": "収縮",
+    "start": 0.76,
+    "end": 1.12,
+    "moras": [
+      {
+        "slice_id": 4,
+        "mora_id": 1,
+        "text": "sh",
+        "start": 0.76,
+        "end": 0.83,
+        "duration": 0.07,
+        "rms": 0.04566,
+        "f0": 0.0,
+        "spectral_centroid": 6364.45,
+        "zcr": 0.18645
+      },
+      {
+        "slice_id": 5,
+        "mora_id": 2,
+        "text": "ɨ",
+        "start": 0.83,
+        "end": 0.93,
+        "duration": 0.1,
+        "rms": 0.1379,
+        "f0": 101.98,
+        "spectral_centroid": 2255.39,
+        "zcr": 0.02713
+      },
+      {
+        "slice_id": 6,
+        "mora_id": 3,
+        "text": "sh",
+        "start": 0.93,
+        "end": 0.99,
+        "duration": 0.06,
+        "rms": 0.04288,
+        "f0": 1869.38,
+        "spectral_centroid": 5889.7,
+        "zcr": 0.16032
+      },
+      {
+        "slice_id": 7,
+        "mora_id": 4,
+        "text": "ɨ",
+        "start": 0.99,
+        "end": 1.03,
+        "duration": 0.04,
+        "rms": 0.01898,
+        "f0": 96.54,
+        "spectral_centroid": 6298.5,
+        "zcr": 0.13379
+      },
+      {
+        "slice_id": 8,
+        "mora_id": 5,
+        "text": "k",
+        "start": 1.03,
+        "end": 1.07,
+        "duration": 0.04,
+        "rms": 0.00985,
+        "f0": 956.88,
+        "spectral_centroid": 4048.14,
+        "zcr": 0.09082
+      },
+      {
+        "slice_id": 9,
+        "mora_id": 6,
+        "text": "う",
+        "start": 1.07,
+        "end": 1.12,
+        "duration": 0.05,
+        "rms": 0.09997,
+        "f0": 73.98,
+        "spectral_centroid": 1894.77,
+        "zcr": 0.0208
+      }
+    ]
+  },
+  {
+    "word_id": 3,
+    "word": "に",
+    "start": 1.12,
+    "end": 1.23,
+    "moras": [
+      {
+        "slice_id": 10,
+        "mora_id": 1,
+        "text": "nyi",
+        "start": 1.12,
+        "end": 1.23,
+        "duration": 0.11,
+        "rms": 0.08837,
+        "f0": 65.41,
+        "spectral_centroid": 2166.04,
+        "zcr": 0.03301
+      }
+    ]
+  },
+  {
+    "word_id": 4,
+    "word": "は",
+    "start": 1.23,
+    "end": 1.5,
+    "moras": [
+      {
+        "slice_id": 11,
+        "mora_id": 1,
+        "text": "わ",
+        "start": 1.23,
+        "end": 1.5,
+        "duration": 0.27,
+        "rms": 0.09286,
+        "f0": 65.87,
+        "spectral_centroid": 1835.35,
+        "zcr": 0.02863
+      }
+    ]
+  },
+  {
+    "word_id": 5,
+    "word": "血管",
+    "start": 1.6,
+    "end": 2.03,
+    "moras": [
+      {
+        "slice_id": 12,
+        "mora_id": 1,
+        "text": "け",
+        "start": 1.6,
+        "end": 1.75,
+        "duration": 0.15,
+        "rms": 0.06933,
+        "f0": 67.58,
+        "spectral_centroid": 3633.0,
+        "zcr": 0.08755
+      },
+      {
+        "slice_id": 13,
+        "mora_id": 2,
+        "text": "か",
+        "start": 1.75,
+        "end": 2.0,
+        "duration": 0.25,
+        "rms": 0.09836,
+        "f0": 96.44,
+        "spectral_centroid": 2511.14,
+        "zcr": 0.05755
+      },
+      {
+        "slice_id": 14,
+        "mora_id": 3,
+        "text": "ん",
+        "start": 2.0,
+        "end": 2.03,
+        "duration": 0.03,
+        "rms": 0.09654,
+        "f0": 91.97,
+        "spectral_centroid": 2204.5,
+        "zcr": 0.00651
+      }
+    ]
+  },
+  {
+    "word_id": 6,
+    "word": "併活金",
+    "start": 2.03,
+    "end": 2.61,
+    "moras": [
+      {
+        "slice_id": 15,
+        "mora_id": 1,
+        "text": "spn",
+        "start": 2.03,
+        "end": 2.61,
+        "duration": 0.58,
+        "rms": 0.08563,
+        "f0": 90.29,
+        "spectral_centroid": 3659.3,
+        "zcr": 0.09991
+      }
+    ]
+  },
+  {
+    "word_id": 7,
+    "word": "細胞内",
+    "start": 2.61,
+    "end": 3.17,
+    "moras": [
+      {
+        "slice_id": 16,
+        "mora_id": 1,
+        "text": "さ",
+        "start": 2.61,
+        "end": 2.78,
+        "duration": 0.17,
+        "rms": 0.08076,
+        "f0": 86.21,
+        "spectral_centroid": 5075.28,
+        "zcr": 0.16204
+      },
+      {
+        "slice_id": 17,
+        "mora_id": 2,
+        "text": "い",
+        "start": 2.78,
+        "end": 2.84,
+        "duration": 0.06,
+        "rms": 0.11807,
+        "f0": 85.72,
+        "spectral_centroid": 2295.13,
+        "zcr": 0.01921
+      },
+      {
+        "slice_id": 18,
+        "mora_id": 3,
+        "text": "b",
+        "start": 2.84,
+        "end": 2.89,
+        "duration": 0.05,
+        "rms": 0.04231,
+        "f0": 83.48,
+        "spectral_centroid": 1443.11,
+        "zcr": 0.00732
+      },
+      {
+        "slice_id": 19,
+        "mora_id": 4,
+        "text": "お",
+        "start": 2.89,
+        "end": 3.0,
+        "duration": 0.11,
+        "rms": 0.14982,
+        "f0": 84.52,
+        "spectral_centroid": 1609.76,
+        "zcr": 0.02432
+      },
+      {
+        "slice_id": 20,
+        "mora_id": 5,
+        "text": "な",
+        "start": 3.0,
+        "end": 3.12,
+        "duration": 0.12,
+        "rms": 0.10867,
+        "f0": 65.41,
+        "spectral_centroid": 1876.93,
+        "zcr": 0.02668
+      },
+      {
+        "slice_id": 21,
+        "mora_id": 6,
+        "text": "い",
+        "start": 3.12,
+        "end": 3.17,
+        "duration": 0.05,
+        "rms": 0.07358,
+        "f0": 0.0,
+        "spectral_centroid": 2213.81,
+        "zcr": 0.02637
+      }
+    ]
+  },
+  {
+    "word_id": 8,
+    "word": "の",
+    "start": 3.17,
+    "end": 3.27,
+    "moras": [
+      {
+        "slice_id": 22,
+        "mora_id": 1,
+        "text": "の",
+        "start": 3.17,
+        "end": 3.27,
+        "duration": 0.1,
+        "rms": 0.04978,
+        "f0": 0.0,
+        "spectral_centroid": 1408.35,
+        "zcr": 0.02252
+      }
+    ]
+  },
+  {
+    "word_id": 9,
+    "word": "カルシウム",
+    "start": 3.27,
+    "end": 3.83,
+    "moras": [
+      {
+        "slice_id": 23,
+        "mora_id": 1,
+        "text": "か",
+        "start": 3.27,
+        "end": 3.42,
+        "duration": 0.15,
+        "rms": 0.051,
+        "f0": 0.0,
+        "spectral_centroid": 2951.69,
+        "zcr": 0.05014
+      },
+      {
+        "slice_id": 24,
+        "mora_id": 2,
+        "text": "r",
+        "start": 3.42,
+        "end": 3.46,
+        "duration": 0.04,
+        "rms": 0.06373,
+        "f0": 72.59,
+        "spectral_centroid": 2164.63,
+        "zcr": 0.02209
+      },
+      {
+        "slice_id": 25,
+        "mora_id": 3,
+        "text": "う",
+        "start": 3.46,
+        "end": 3.52,
+        "duration": 0.06,
+        "rms": 0.08995,
+        "f0": 82.57,
+        "spectral_centroid": 2307.43,
+        "zcr": 0.02181
+      },
+      {
+        "slice_id": 26,
+        "mora_id": 4,
+        "text": "し",
+        "start": 3.52,
+        "end": 3.67,
+        "duration": 0.15,
+        "rms": 0.05842,
+        "f0": 92.41,
+        "spectral_centroid": 5185.02,
+        "zcr": 0.17593
+      },
+      {
+        "slice_id": 27,
+        "mora_id": 5,
+        "text": "う",
+        "start": 3.67,
+        "end": 3.75,
+        "duration": 0.08,
+        "rms": 0.12109,
+        "f0": 86.24,
+        "spectral_centroid": 1872.99,
+        "zcr": 0.02372
+      },
+      {
+        "slice_id": 28,
+        "mora_id": 6,
+        "text": "m",
+        "start": 3.75,
+        "end": 3.78,
+        "duration": 0.03,
+        "rms": 0.06756,
+        "f0": 84.01,
+        "spectral_centroid": 1718.61,
+        "zcr": 0.00879
+      },
+      {
+        "slice_id": 29,
+        "mora_id": 7,
+        "text": "う",
+        "start": 3.78,
+        "end": 3.83,
+        "duration": 0.05,
+        "rms": 0.09156,
+        "f0": 83.27,
+        "spectral_centroid": 1583.53,
+        "zcr": 0.02539
+      }
+    ]
+  },
+  {
+    "word_id": 10,
+    "word": "ノード",
+    "start": 3.83,
+    "end": 4.09,
+    "moras": [
+      {
+        "slice_id": 30,
+        "mora_id": 1,
+        "text": "n",
+        "start": 3.83,
+        "end": 3.89,
+        "duration": 0.06,
+        "rms": 0.08853,
+        "f0": 83.61,
+        "spectral_centroid": 1541.95,
+        "zcr": 0.01066
+      },
+      {
+        "slice_id": 31,
+        "mora_id": 2,
+        "text": "お",
+        "start": 3.89,
+        "end": 3.98,
+        "duration": 0.09,
+        "rms": 0.13236,
+        "f0": 78.8,
+        "spectral_centroid": 1746.83,
+        "zcr": 0.02985
+      },
+      {
+        "slice_id": 32,
+        "mora_id": 3,
+        "text": "ど",
+        "start": 3.98,
+        "end": 4.09,
+        "duration": 0.11,
+        "rms": 0.06566,
+        "f0": 65.41,
+        "spectral_centroid": 1732.9,
+        "zcr": 0.02168
+      }
+    ]
+  },
+  {
+    "word_id": 11,
+    "word": "が",
+    "start": 4.09,
+    "end": 4.21,
+    "moras": [
+      {
+        "slice_id": 33,
+        "mora_id": 1,
+        "text": "が",
+        "start": 4.09,
+        "end": 4.21,
+        "duration": 0.12,
+        "rms": 0.06593,
+        "f0": 0.0,
+        "spectral_centroid": 1722.66,
+        "zcr": 0.02477
+      }
+    ]
+  },
+  {
+    "word_id": 12,
+    "word": "関与",
+    "start": 4.21,
+    "end": 4.53,
+    "moras": [
+      {
+        "slice_id": 34,
+        "mora_id": 1,
+        "text": "か",
+        "start": 4.21,
+        "end": 4.34,
+        "duration": 0.13,
+        "rms": 0.04115,
+        "f0": 68.36,
+        "spectral_centroid": 3356.73,
+        "zcr": 0.04419
+      },
+      {
+        "slice_id": 35,
+        "mora_id": 2,
+        "text": "ɰ̃",
+        "start": 4.34,
+        "end": 4.42,
+        "duration": 0.08,
+        "rms": 0.08612,
+        "f0": 70.42,
+        "spectral_centroid": 2267.0,
+        "zcr": 0.03376
+      },
+      {
+        "slice_id": 36,
+        "mora_id": 3,
+        "text": "よ",
+        "start": 4.42,
+        "end": 4.53,
+        "duration": 0.11,
+        "rms": 0.05935,
+        "f0": 65.41,
+        "spectral_centroid": 2073.58,
+        "zcr": 0.02686
+      }
+    ]
+  },
+  {
+    "word_id": 13,
+    "word": "して",
+    "start": 4.53,
+    "end": 4.69,
+    "moras": [
+      {
+        "slice_id": 37,
+        "mora_id": 1,
+        "text": "sh",
+        "start": 4.53,
+        "end": 4.6,
+        "duration": 0.07,
+        "rms": 0.01779,
+        "f0": 0.0,
+        "spectral_centroid": 5825.53,
+        "zcr": 0.16832
+      },
+      {
+        "slice_id": 38,
+        "mora_id": 2,
+        "text": "て",
+        "start": 4.6,
+        "end": 4.69,
+        "duration": 0.09,
+        "rms": 0.03479,
+        "f0": 0.0,
+        "spectral_centroid": 4083.56,
+        "zcr": 0.11005
+      }
+    ]
+  },
+  {
+    "word_id": 14,
+    "word": "おり",
+    "start": 4.69,
+    "end": 4.95,
+    "moras": [
+      {
+        "slice_id": 39,
+        "mora_id": 1,
+        "text": "お",
+        "start": 4.69,
+        "end": 4.75,
+        "duration": 0.06,
+        "rms": 0.06492,
+        "f0": 231.17,
+        "spectral_centroid": 1832.82,
+        "zcr": 0.02059
+      },
+      {
+        "slice_id": 40,
+        "mora_id": 2,
+        "text": "rʲi",
+        "start": 4.75,
+        "end": 4.95,
+        "duration": 0.2,
+        "rms": 0.03275,
+        "f0": 0.0,
+        "spectral_centroid": 2256.6,
+        "zcr": 0.02962
+      }
+    ]
+  },
+  {
+    "word_id": 15,
+    "word": "血管",
+    "start": 5.32,
+    "end": 5.73,
+    "moras": [
+      {
+        "slice_id": 41,
+        "mora_id": 1,
+        "text": "け",
+        "start": 5.32,
+        "end": 5.46,
+        "duration": 0.14,
+        "rms": 0.09023,
+        "f0": 76.68,
+        "spectral_centroid": 3743.08,
+        "zcr": 0.09123
+      },
+      {
+        "slice_id": 42,
+        "mora_id": 2,
+        "text": "か",
+        "start": 5.46,
+        "end": 5.67,
+        "duration": 0.21,
+        "rms": 0.12467,
+        "f0": 100.54,
+        "spectral_centroid": 2117.54,
+        "zcr": 0.04333
+      },
+      {
+        "slice_id": 43,
+        "mora_id": 3,
+        "text": "ん",
+        "start": 5.67,
+        "end": 5.73,
+        "duration": 0.06,
+        "rms": 0.09828,
+        "f0": 98.67,
+        "spectral_centroid": 1690.97,
+        "zcr": 0.01042
+      }
+    ]
+  },
+  {
+    "word_id": 16,
+    "word": "併活金",
+    "start": 5.73,
+    "end": 6.23,
+    "moras": [
+      {
+        "slice_id": 44,
+        "mora_id": 1,
+        "text": "spn",
+        "start": 5.73,
+        "end": 6.23,
+        "duration": 0.5,
+        "rms": 0.09079,
+        "f0": 101.29,
+        "spectral_centroid": 3184.28,
+        "zcr": 0.0889
+      }
+    ]
+  },
+  {
+    "word_id": 17,
+    "word": "細胞内",
+    "start": 6.23,
+    "end": 6.79,
+    "moras": [
+      {
+        "slice_id": 45,
+        "mora_id": 1,
+        "text": "さ",
+        "start": 6.23,
+        "end": 6.38,
+        "duration": 0.15,
+        "rms": 0.08063,
+        "f0": 97.73,
+        "spectral_centroid": 5713.2,
+        "zcr": 0.20632
+      },
+      {
+        "slice_id": 46,
+        "mora_id": 2,
+        "text": "い",
+        "start": 6.38,
+        "end": 6.44,
+        "duration": 0.06,
+        "rms": 0.12086,
+        "f0": 93.86,
+        "spectral_centroid": 2036.33,
+        "zcr": 0.02205
+      },
+      {
+        "slice_id": 47,
+        "mora_id": 3,
+        "text": "b",
+        "start": 6.44,
+        "end": 6.49,
+        "duration": 0.05,
+        "rms": 0.04258,
+        "f0": 88.34,
+        "spectral_centroid": 1586.54,
+        "zcr": 0.01289
+      },
+      {
+        "slice_id": 48,
+        "mora_id": 4,
+        "text": "お",
+        "start": 6.49,
+        "end": 6.6,
+        "duration": 0.11,
+        "rms": 0.13509,
+        "f0": 90.99,
+        "spectral_centroid": 1585.0,
+        "zcr": 0.02114
+      },
+      {
+        "slice_id": 49,
+        "mora_id": 5,
+        "text": "な",
+        "start": 6.6,
+        "end": 6.75,
+        "duration": 0.15,
+        "rms": 0.10649,
+        "f0": 67.85,
+        "spectral_centroid": 1962.48,
+        "zcr": 0.03166
+      },
+      {
+        "slice_id": 50,
+        "mora_id": 6,
+        "text": "い",
+        "start": 6.75,
+        "end": 6.79,
+        "duration": 0.04,
+        "rms": 0.09151,
+        "f0": 264.29,
+        "spectral_centroid": 2096.91,
+        "zcr": 0.02368
+      }
+    ]
+  },
+  {
+    "word_id": 18,
+    "word": "へ",
+    "start": 6.79,
+    "end": 6.86,
+    "moras": [
+      {
+        "slice_id": 51,
+        "mora_id": 1,
+        "text": "え",
+        "start": 6.79,
+        "end": 6.86,
+        "duration": 0.07,
+        "rms": 0.09475,
+        "f0": 259.42,
+        "spectral_centroid": 2025.2,
+        "zcr": 0.03097
+      }
+    ]
+  },
+  {
+    "word_id": 19,
+    "word": "の",
+    "start": 6.86,
+    "end": 7.09,
+    "moras": [
+      {
+        "slice_id": 52,
+        "mora_id": 1,
+        "text": "の",
+        "start": 6.86,
+        "end": 7.09,
+        "duration": 0.23,
+        "rms": 0.04781,
+        "f0": 65.41,
+        "spectral_centroid": 1083.06,
+        "zcr": 0.02056
+      }
+    ]
+  },
+  {
+    "word_id": 20,
+    "word": "カルシウム",
+    "start": 7.28,
+    "end": 7.86,
+    "moras": [
+      {
+        "slice_id": 53,
+        "mora_id": 1,
+        "text": "か",
+        "start": 7.28,
+        "end": 7.43,
+        "duration": 0.15,
+        "rms": 0.07523,
+        "f0": 0.0,
+        "spectral_centroid": 4386.34,
+        "zcr": 0.09619
+      },
+      {
+        "slice_id": 54,
+        "mora_id": 2,
+        "text": "r",
+        "start": 7.43,
+        "end": 7.47,
+        "duration": 0.04,
+        "rms": 0.06338,
+        "f0": 83.24,
+        "spectral_centroid": 2151.37,
+        "zcr": 0.01648
+      },
+      {
+        "slice_id": 55,
+        "mora_id": 3,
+        "text": "う",
+        "start": 7.47,
+        "end": 7.52,
+        "duration": 0.05,
+        "rms": 0.14431,
+        "f0": 95.21,
+        "spectral_centroid": 2349.69,
+        "zcr": 0.01768
+      },
+      {
+        "slice_id": 56,
+        "mora_id": 4,
+        "text": "し",
+        "start": 7.52,
+        "end": 7.66,
+        "duration": 0.14,
+        "rms": 0.05689,
+        "f0": 108.24,
+        "spectral_centroid": 5199.5,
+        "zcr": 0.17582
+      },
+      {
+        "slice_id": 57,
+        "mora_id": 5,
+        "text": "う",
+        "start": 7.66,
+        "end": 7.75,
+        "duration": 0.09,
+        "rms": 0.11468,
+        "f0": 105.8,
+        "spectral_centroid": 1700.73,
+        "zcr": 0.01941
+      },
+      {
+        "slice_id": 58,
+        "mora_id": 6,
+        "text": "m",
+        "start": 7.75,
+        "end": 7.8,
+        "duration": 0.05,
+        "rms": 0.08432,
+        "f0": 100.87,
+        "spectral_centroid": 2455.67,
+        "zcr": 0.0082
+      },
+      {
+        "slice_id": 59,
+        "mora_id": 7,
+        "text": "う",
+        "start": 7.8,
+        "end": 7.86,
+        "duration": 0.06,
+        "rms": 0.12457,
+        "f0": 99.14,
+        "spectral_centroid": 2008.15,
+        "zcr": 0.0236
+      }
+    ]
+  },
+  {
+    "word_id": 21,
+    "word": "流入",
+    "start": 7.86,
+    "end": 8.2,
+    "moras": [
+      {
+        "slice_id": 60,
+        "mora_id": 1,
+        "text": "rʲ",
+        "start": 7.86,
+        "end": 7.92,
+        "duration": 0.06,
+        "rms": 0.06374,
+        "f0": 95.69,
+        "spectral_centroid": 2014.48,
+        "zcr": 0.02637
+      },
+      {
+        "slice_id": 61,
+        "mora_id": 2,
+        "text": "ɨ",
+        "start": 7.92,
+        "end": 8.01,
+        "duration": 0.09,
+        "rms": 0.13743,
+        "f0": 99.3,
+        "spectral_centroid": 1949.86,
+        "zcr": 0.03284
+      },
+      {
+        "slice_id": 62,
+        "mora_id": 3,
+        "text": "ny",
+        "start": 8.01,
+        "end": 8.1,
+        "duration": 0.09,
+        "rms": 0.08927,
+        "f0": 77.04,
+        "spectral_centroid": 1918.66,
+        "zcr": 0.02679
+      },
+      {
+        "slice_id": 63,
+        "mora_id": 4,
+        "text": "ɨo",
+        "start": 8.1,
+        "end": 8.26,
+        "duration": 0.16,
+        "rms": 0.08354,
+        "f0": 65.41,
+        "spectral_centroid": 1402.18,
+        "zcr": 0.02072
+      }
+    ]
+  },
+  {
+    "word_id": 23,
+    "word": "ブロック",
+    "start": 8.26,
+    "end": 8.56,
+    "moras": [
+      {
+        "slice_id": 64,
+        "mora_id": 1,
+        "text": "b",
+        "start": 8.26,
+        "end": 8.32,
+        "duration": 0.06,
+        "rms": 0.01878,
+        "f0": 65.41,
+        "spectral_centroid": 1006.64,
+        "zcr": 0.00578
+      },
+      {
+        "slice_id": 65,
+        "mora_id": 2,
+        "text": "う",
+        "start": 8.32,
+        "end": 8.36,
+        "duration": 0.04,
+        "rms": 0.06717,
+        "f0": 66.95,
+        "spectral_centroid": 1227.05,
+        "zcr": 0.01086
+      },
+      {
+        "slice_id": 66,
+        "mora_id": 3,
+        "text": "ろ",
+        "start": 8.36,
+        "end": 8.47,
+        "duration": 0.11,
+        "rms": 0.11036,
+        "f0": 0.0,
+        "spectral_centroid": 1629.82,
+        "zcr": 0.02734
+      },
+      {
+        "slice_id": 67,
+        "mora_id": 4,
+        "text": "k",
+        "start": 8.47,
+        "end": 8.53,
+        "duration": 0.06,
+        "rms": 0.0046,
+        "f0": 0.0,
+        "spectral_centroid": 4904.04,
+        "zcr": 0.07642
+      },
+      {
+        "slice_id": 68,
+        "mora_id": 5,
+        "text": "う",
+        "start": 8.53,
+        "end": 8.56,
+        "duration": 0.03,
+        "rms": 0.01721,
+        "f0": 0.0,
+        "spectral_centroid": 9243.87,
+        "zcr": 0.24463
+      }
+    ]
+  },
+  {
+    "word_id": 24,
+    "word": "すれば",
+    "start": 8.56,
+    "end": 8.95,
+    "moras": [
+      {
+        "slice_id": 69,
+        "mora_id": 1,
+        "text": "s",
+        "start": 8.56,
+        "end": 8.61,
+        "duration": 0.05,
+        "rms": 0.02404,
+        "f0": 842.21,
+        "spectral_centroid": 9456.75,
+        "zcr": 0.31191
+      },
+      {
+        "slice_id": 70,
+        "mora_id": 2,
+        "text": "ɨ",
+        "start": 8.61,
+        "end": 8.64,
+        "duration": 0.03,
+        "rms": 0.05148,
+        "f0": 65.41,
+        "spectral_centroid": 2667.66,
+        "zcr": 0.01953
+      },
+      {
+        "slice_id": 71,
+        "mora_id": 3,
+        "text": "れ",
+        "start": 8.64,
+        "end": 8.74,
+        "duration": 0.1,
+        "rms": 0.0817,
+        "f0": 242.67,
+        "spectral_centroid": 1862.46,
+        "zcr": 0.02528
+      },
+      {
+        "slice_id": 72,
+        "mora_id": 4,
+        "text": "ば",
+        "start": 8.74,
+        "end": 8.95,
+        "duration": 0.21,
+        "rms": 0.06062,
+        "f0": 68.39,
+        "spectral_centroid": 1638.55,
+        "zcr": 0.03238
+      }
+    ]
+  },
+  {
+    "word_id": 25,
+    "word": "血管",
+    "start": 9.2,
+    "end": 9.55,
+    "moras": [
+      {
+        "slice_id": 73,
+        "mora_id": 1,
+        "text": "け",
+        "start": 9.2,
+        "end": 9.33,
+        "duration": 0.13,
+        "rms": 0.07191,
+        "f0": 0.0,
+        "spectral_centroid": 4230.97,
+        "zcr": 0.12443
+      },
+      {
+        "slice_id": 74,
+        "mora_id": 2,
+        "text": "か",
+        "start": 9.33,
+        "end": 9.49,
+        "duration": 0.16,
+        "rms": 0.09189,
+        "f0": 85.32,
+        "spectral_centroid": 2643.6,
+        "zcr": 0.05915
+      },
+      {
+        "slice_id": 75,
+        "mora_id": 3,
+        "text": "ん",
+        "start": 9.49,
+        "end": 9.55,
+        "duration": 0.06,
+        "rms": 0.09502,
+        "f0": 79.43,
+        "spectral_centroid": 2711.75,
+        "zcr": 0.02775
+      }
+    ]
+  },
+  {
+    "word_id": 26,
+    "word": "収縮",
+    "start": 9.55,
+    "end": 9.98,
+    "moras": [
+      {
+        "slice_id": 76,
+        "mora_id": 1,
+        "text": "sh",
+        "start": 9.55,
+        "end": 9.66,
+        "duration": 0.11,
+        "rms": 0.04321,
+        "f0": 0.0,
+        "spectral_centroid": 6107.46,
+        "zcr": 0.19727
+      },
+      {
+        "slice_id": 77,
+        "mora_id": 2,
+        "text": "ɨ",
+        "start": 9.66,
+        "end": 9.74,
+        "duration": 0.08,
+        "rms": 0.12342,
+        "f0": 78.86,
+        "spectral_centroid": 2325.17,
+        "zcr": 0.03878
+      },
+      {
+        "slice_id": 78,
+        "mora_id": 3,
+        "text": "sh",
+        "start": 9.74,
+        "end": 9.81,
+        "duration": 0.07,
+        "rms": 0.03718,
+        "f0": 1833.48,
+        "spectral_centroid": 6097.49,
+        "zcr": 0.19371
+      },
+      {
+        "slice_id": 79,
+        "mora_id": 4,
+        "text": "ɨ",
+        "start": 9.81,
+        "end": 9.85,
+        "duration": 0.04,
+        "rms": 0.01096,
+        "f0": 0.0,
+        "spectral_centroid": 5812.04,
+        "zcr": 0.13708
+      },
+      {
+        "slice_id": 80,
+        "mora_id": 5,
+        "text": "k",
+        "start": 9.85,
+        "end": 9.91,
+        "duration": 0.06,
+        "rms": 0.00603,
+        "f0": 706.59,
+        "spectral_centroid": 4612.1,
+        "zcr": 0.13379
+      },
+      {
+        "slice_id": 81,
+        "mora_id": 6,
+        "text": "uo",
+        "start": 9.91,
+        "end": 10.07,
+        "duration": 0.16,
+        "rms": 0.0681,
+        "f0": 235.42,
+        "spectral_centroid": 1015.41,
+        "zcr": 0.01712
+      }
+    ]
+  },
+  {
+    "word_id": 28,
+    "word": "抑制",
+    "start": 10.07,
+    "end": 10.46,
+    "moras": [
+      {
+        "slice_id": 82,
+        "mora_id": 1,
+        "text": "よ",
+        "start": 10.07,
+        "end": 10.19,
+        "duration": 0.12,
+        "rms": 0.04083,
+        "f0": 229.48,
+        "spectral_centroid": 1022.18,
+        "zcr": 0.01567
+      },
+      {
+        "slice_id": 83,
+        "mora_id": 2,
+        "text": "k",
+        "start": 10.19,
+        "end": 10.26,
+        "duration": 0.07,
+        "rms": 0.01078,
+        "f0": 0.0,
+        "spectral_centroid": 4701.56,
+        "zcr": 0.09912
+      },
+      {
+        "slice_id": 84,
+        "mora_id": 3,
+        "text": "s",
+        "start": 10.26,
+        "end": 10.35,
+        "duration": 0.09,
+        "rms": 0.03732,
+        "f0": 0.0,
+        "spectral_centroid": 8058.69,
+        "zcr": 0.3056
+      },
+      {
+        "slice_id": 85,
+        "mora_id": 4,
+        "text": "え",
+        "start": 10.35,
+        "end": 10.46,
+        "duration": 0.11,
+        "rms": 0.148,
+        "f0": 72.7,
+        "spectral_centroid": 2592.35,
+        "zcr": 0.04419
+      }
+    ]
+  },
+  {
+    "word_id": 29,
+    "word": "できます",
+    "start": 10.46,
+    "end": 10.96,
+    "moras": [
+      {
+        "slice_id": 86,
+        "mora_id": 1,
+        "text": "で",
+        "start": 10.46,
+        "end": 10.55,
+        "duration": 0.09,
+        "rms": 0.08097,
+        "f0": 67.38,
+        "spectral_centroid": 2359.56,
+        "zcr": 0.04358
+      },
+      {
+        "slice_id": 87,
+        "mora_id": 2,
+        "text": "ひ",
+        "start": 10.55,
+        "end": 10.64,
+        "duration": 0.09,
+        "rms": 0.02138,
+        "f0": 67.09,
+        "spectral_centroid": 3156.51,
+        "zcr": 0.08514
+      },
+      {
+        "slice_id": 88,
+        "mora_id": 3,
+        "text": "ま",
+        "start": 10.64,
+        "end": 10.75,
+        "duration": 0.11,
+        "rms": 0.09864,
+        "f0": 65.41,
+        "spectral_centroid": 1888.45,
+        "zcr": 0.03325
+      },
+      {
+        "slice_id": 89,
+        "mora_id": 4,
+        "text": "s",
+        "start": 10.75,
+        "end": 10.84,
+        "duration": 0.09,
+        "rms": 0.02276,
+        "f0": 942.48,
+        "spectral_centroid": 8487.53,
+        "zcr": 0.32867
+      },
+      {
+        "slice_id": 90,
+        "mora_id": 5,
+        "text": "ɨ̥",
+        "start": 10.84,
+        "end": 10.96,
+        "duration": 0.12,
+        "rms": 0.00577,
+        "f0": 0.0,
+        "spectral_centroid": 8721.26,
+        "zcr": 0.28911
+      }
+    ]
+  },
+  {
+    "word_id": 30,
+    "word": "しかし",
+    "start": 11.92,
+    "end": 12.41,
+    "moras": [
+      {
+        "slice_id": 91,
+        "mora_id": 1,
+        "text": "sh",
+        "start": 11.92,
+        "end": 12.04,
+        "duration": 0.12,
+        "rms": 0.02734,
+        "f0": 65.41,
+        "spectral_centroid": 6117.03,
+        "zcr": 0.20628
+      },
+      {
+        "slice_id": 92,
+        "mora_id": 2,
+        "text": "か",
+        "start": 12.04,
+        "end": 12.15,
+        "duration": 0.11,
+        "rms": 0.12053,
+        "f0": 110.15,
+        "spectral_centroid": 2852.49,
+        "zcr": 0.06177
+      },
+      {
+        "slice_id": 93,
+        "mora_id": 3,
+        "text": "し",
+        "start": 12.15,
+        "end": 12.41,
+        "duration": 0.26,
+        "rms": 0.10194,
+        "f0": 81.23,
+        "spectral_centroid": 3813.49,
+        "zcr": 0.11509
+      }
+    ]
+  },
+  {
+    "word_id": 31,
+    "word": "近年",
+    "start": 12.41,
+    "end": 12.88,
+    "moras": [
+      {
+        "slice_id": 94,
+        "mora_id": 1,
+        "text": "ひ",
+        "start": 12.41,
+        "end": 12.56,
+        "duration": 0.15,
+        "rms": 0.06265,
+        "f0": 89.61,
+        "spectral_centroid": 3015.09,
+        "zcr": 0.07858
+      },
+      {
+        "slice_id": 95,
+        "mora_id": 2,
+        "text": "ね",
+        "start": 12.56,
+        "end": 12.79,
+        "duration": 0.23,
+        "rms": 0.10214,
+        "f0": 72.05,
+        "spectral_centroid": 1999.09,
+        "zcr": 0.04182
+      },
+      {
+        "slice_id": 96,
+        "mora_id": 3,
+        "text": "ん",
+        "start": 12.79,
+        "end": 12.88,
+        "duration": 0.09,
+        "rms": 0.02488,
+        "f0": 65.41,
+        "spectral_centroid": 1688.71,
+        "zcr": 0.00842
+      }
+    ]
+  },
+  {
+    "word_id": 32,
+    "word": "カルシウム",
+    "start": 13.13,
+    "end": 13.74,
+    "moras": [
+      {
+        "slice_id": 97,
+        "mora_id": 1,
+        "text": "か",
+        "start": 13.13,
+        "end": 13.27,
+        "duration": 0.14,
+        "rms": 0.07554,
+        "f0": 0.0,
+        "spectral_centroid": 3490.81,
+        "zcr": 0.0767
+      },
+      {
+        "slice_id": 98,
+        "mora_id": 2,
+        "text": "r",
+        "start": 13.27,
+        "end": 13.31,
+        "duration": 0.04,
+        "rms": 0.08898,
+        "f0": 0.0,
+        "spectral_centroid": 1802.41,
+        "zcr": 0.02478
+      },
+      {
+        "slice_id": 99,
+        "mora_id": 3,
+        "text": "う",
+        "start": 13.31,
+        "end": 13.37,
+        "duration": 0.06,
+        "rms": 0.12507,
+        "f0": 83.23,
+        "spectral_centroid": 2085.93,
+        "zcr": 0.02148
+      },
+      {
+        "slice_id": 100,
+        "mora_id": 4,
+        "text": "し",
+        "start": 13.37,
+        "end": 13.55,
+        "duration": 0.18,
+        "rms": 0.07265,
+        "f0": 95.69,
+        "spectral_centroid": 4936.71,
+        "zcr": 0.16321
+      },
+      {
+        "slice_id": 101,
+        "mora_id": 5,
+        "text": "う",
+        "start": 13.55,
+        "end": 13.63,
+        "duration": 0.08,
+        "rms": 0.16888,
+        "f0": 92.65,
+        "spectral_centroid": 1656.18,
+        "zcr": 0.02016
+      },
+      {
+        "slice_id": 102,
+        "mora_id": 6,
+        "text": "m",
+        "start": 13.63,
+        "end": 13.68,
+        "duration": 0.05,
+        "rms": 0.10404,
+        "f0": 91.65,
+        "spectral_centroid": 1466.32,
+        "zcr": 0.01445
+      },
+      {
+        "slice_id": 103,
+        "mora_id": 7,
+        "text": "う",
+        "start": 13.68,
+        "end": 13.74,
+        "duration": 0.06,
+        "rms": 0.11698,
+        "f0": 88.41,
+        "spectral_centroid": 2142.42,
+        "zcr": 0.01929
+      }
+    ]
+  },
+  {
+    "word_id": 33,
+    "word": "流入",
+    "start": 13.74,
+    "end": 14.09,
+    "moras": [
+      {
+        "slice_id": 104,
+        "mora_id": 1,
+        "text": "rʲ",
+        "start": 13.74,
+        "end": 13.79,
+        "duration": 0.05,
+        "rms": 0.05093,
+        "f0": 84.08,
+        "spectral_centroid": 2460.61,
+        "zcr": 0.01279
+      },
+      {
+        "slice_id": 105,
+        "mora_id": 2,
+        "text": "ɨ",
+        "start": 13.79,
+        "end": 13.9,
+        "duration": 0.11,
+        "rms": 0.1808,
+        "f0": 89.83,
+        "spectral_centroid": 1991.16,
+        "zcr": 0.02363
+      },
+      {
+        "slice_id": 106,
+        "mora_id": 3,
+        "text": "ny",
+        "start": 13.9,
+        "end": 13.97,
+        "duration": 0.07,
+        "rms": 0.08827,
+        "f0": 78.39,
+        "spectral_centroid": 2038.14,
+        "zcr": 0.01667
+      },
+      {
+        "slice_id": 107,
+        "mora_id": 4,
+        "text": "ɨ",
+        "start": 13.97,
+        "end": 14.09,
+        "duration": 0.12,
+        "rms": 0.08409,
+        "f0": 65.41,
+        "spectral_centroid": 1808.24,
+        "zcr": 0.02313
+      }
+    ]
+  },
+  {
+    "word_id": 34,
+    "word": "と",
+    "start": 14.09,
+    "end": 14.19,
+    "moras": [
+      {
+        "slice_id": 108,
+        "mora_id": 1,
+        "text": "と",
+        "start": 14.09,
+        "end": 14.19,
+        "duration": 0.1,
+        "rms": 0.03886,
+        "f0": 65.41,
+        "spectral_centroid": 2292.14,
+        "zcr": 0.03646
+      }
+    ]
+  },
+  {
+    "word_id": 35,
+    "word": "は",
+    "start": 14.19,
+    "end": 14.34,
+    "moras": [
+      {
+        "slice_id": 109,
+        "mora_id": 1,
+        "text": "わ",
+        "start": 14.19,
+        "end": 14.34,
+        "duration": 0.15,
+        "rms": 0.11789,
+        "f0": 316.08,
+        "spectral_centroid": 1548.95,
+        "zcr": 0.02888
+      }
+    ]
+  },
+  {
+    "word_id": 36,
+    "word": "独立",
+    "start": 14.34,
+    "end": 14.82,
+    "moras": [
+      {
+        "slice_id": 110,
+        "mora_id": 1,
+        "text": "ど",
+        "start": 14.34,
+        "end": 14.48,
+        "duration": 0.14,
+        "rms": 0.05867,
+        "f0": 233.59,
+        "spectral_centroid": 1301.56,
+        "zcr": 0.01551
+      },
+      {
+        "slice_id": 111,
+        "mora_id": 2,
+        "text": "k",
+        "start": 14.48,
+        "end": 14.54,
+        "duration": 0.06,
+        "rms": 0.00801,
+        "f0": 629.48,
+        "spectral_centroid": 3377.43,
+        "zcr": 0.02954
+      },
+      {
+        "slice_id": 112,
+        "mora_id": 3,
+        "text": "う",
+        "start": 14.54,
+        "end": 14.59,
+        "duration": 0.05,
+        "rms": 0.07983,
+        "f0": 74.1,
+        "spectral_centroid": 1440.08,
+        "zcr": 0.01592
+      },
+      {
+        "slice_id": 113,
+        "mora_id": 4,
+        "text": "rʲi",
+        "start": 14.59,
+        "end": 14.69,
+        "duration": 0.1,
+        "rms": 0.07734,
+        "f0": 75.21,
+        "spectral_centroid": 2598.67,
+        "zcr": 0.03494
+      },
+      {
+        "slice_id": 114,
+        "mora_id": 5,
+        "text": "ts",
+        "start": 14.69,
+        "end": 14.75,
+        "duration": 0.06,
+        "rms": 0.01141,
+        "f0": 0.0,
+        "spectral_centroid": 7494.79,
+        "zcr": 0.19759
+      },
+      {
+        "slice_id": 115,
+        "mora_id": 6,
+        "text": "ɨ",
+        "start": 14.75,
+        "end": 14.82,
+        "duration": 0.07,
+        "rms": 0.05889,
+        "f0": 78.71,
+        "spectral_centroid": 3315.22,
+        "zcr": 0.03585
+      }
+    ]
+  },
+  {
+    "word_id": 37,
+    "word": "した",
+    "start": 14.82,
+    "end": 15.02,
+    "moras": [
+      {
+        "slice_id": 116,
+        "mora_id": 1,
+        "text": "sh",
+        "start": 14.82,
+        "end": 14.9,
+        "duration": 0.08,
+        "rms": 0.02822,
+        "f0": 0.0,
+        "spectral_centroid": 6845.18,
+        "zcr": 0.22663
+      },
+      {
+        "slice_id": 117,
+        "mora_id": 2,
+        "text": "た",
+        "start": 14.9,
+        "end": 15.02,
+        "duration": 0.12,
+        "rms": 0.07202,
+        "f0": 78.1,
+        "spectral_centroid": 3057.96,
+        "zcr": 0.07923
+      }
+    ]
+  },
+  {
+    "word_id": 38,
+    "word": "経路",
+    "start": 15.02,
+    "end": 15.33,
+    "moras": [
+      {
+        "slice_id": 118,
+        "mora_id": 1,
+        "text": "k",
+        "start": 15.02,
+        "end": 15.1,
+        "duration": 0.08,
+        "rms": 0.01014,
+        "f0": 0.0,
+        "spectral_centroid": 3391.58,
+        "zcr": 0.0565
+      },
+      {
+        "slice_id": 119,
+        "mora_id": 2,
+        "text": "え",
+        "start": 15.1,
+        "end": 15.23,
+        "duration": 0.13,
+        "rms": 0.15832,
+        "f0": 74.26,
+        "spectral_centroid": 1946.33,
+        "zcr": 0.02344
+      },
+      {
+        "slice_id": 120,
+        "mora_id": 3,
+        "text": "ろ",
+        "start": 15.23,
+        "end": 15.33,
+        "duration": 0.1,
+        "rms": 0.08718,
+        "f0": 244.59,
+        "spectral_centroid": 1584.38,
+        "zcr": 0.02349
+      }
+    ]
+  },
+  {
+    "word_id": 39,
+    "word": "と",
+    "start": 15.33,
+    "end": 15.44,
+    "moras": [
+      {
+        "slice_id": 121,
+        "mora_id": 1,
+        "text": "と",
+        "start": 15.33,
+        "end": 15.44,
+        "duration": 0.11,
+        "rms": 0.03904,
+        "f0": 65.41,
+        "spectral_centroid": 2548.62,
+        "zcr": 0.02886
+      }
+    ]
+  },
+  {
+    "word_id": 40,
+    "word": "して",
+    "start": 15.44,
+    "end": 15.8,
+    "moras": [
+      {
+        "slice_id": 122,
+        "mora_id": 1,
+        "text": "sh",
+        "start": 15.44,
+        "end": 15.52,
+        "duration": 0.08,
+        "rms": 0.01911,
+        "f0": 0.0,
+        "spectral_centroid": 5970.15,
+        "zcr": 0.18645
+      },
+      {
+        "slice_id": 123,
+        "mora_id": 2,
+        "text": "て",
+        "start": 15.52,
+        "end": 15.8,
+        "duration": 0.28,
+        "rms": 0.06017,
+        "f0": 65.41,
+        "spectral_centroid": 2430.44,
+        "zcr": 0.04648
+      }
+    ]
+  },
+  {
+    "word_id": 41,
+    "word": "ロック",
+    "start": 15.91,
+    "end": 16.27,
+    "moras": [
+      {
+        "slice_id": 124,
+        "mora_id": 1,
+        "text": "ろ",
+        "start": 15.91,
+        "end": 16.08,
+        "duration": 0.17,
+        "rms": 0.09823,
+        "f0": 66.44,
+        "spectral_centroid": 1361.89,
+        "zcr": 0.02409
+      },
+      {
+        "slice_id": 125,
+        "mora_id": 2,
+        "text": "k",
+        "start": 16.08,
+        "end": 16.24,
+        "duration": 0.16,
+        "rms": 0.00743,
+        "f0": 82.17,
+        "spectral_centroid": 3305.75,
+        "zcr": 0.06703
+      },
+      {
+        "slice_id": 126,
+        "mora_id": 3,
+        "text": "う",
+        "start": 16.24,
+        "end": 16.27,
+        "duration": 0.03,
+        "rms": 0.03186,
+        "f0": 79.78,
+        "spectral_centroid": 3174.2,
+        "zcr": 0.02148
+      }
+    ]
+  },
+  {
+    "word_id": 42,
+    "word": "が",
+    "start": 16.27,
+    "end": 16.469999,
+    "moras": [
+      {
+        "slice_id": 127,
+        "mora_id": 1,
+        "text": "が",
+        "start": 16.27,
+        "end": 16.47,
+        "duration": 0.2,
+        "rms": 0.12356,
+        "f0": 70.58,
+        "spectral_centroid": 2162.11,
+        "zcr": 0.03611
+      }
+    ]
+  },
+  {
+    "word_id": 43,
+    "word": "見出され",
+    "start": 16.469999,
+    "end": 16.959999,
+    "moras": [
+      {
+        "slice_id": 128,
+        "mora_id": 1,
+        "text": "spn",
+        "start": 16.47,
+        "end": 16.96,
+        "duration": 0.49,
+        "rms": 0.06552,
+        "f0": 65.97,
+        "spectral_centroid": 2696.06,
+        "zcr": 0.06435
+      }
+    ]
+  },
+  {
+    "word_id": 44,
+    "word": "血管",
+    "start": 17.549999,
+    "end": 17.92,
+    "moras": [
+      {
+        "slice_id": 129,
+        "mora_id": 1,
+        "text": "け",
+        "start": 17.55,
+        "end": 17.69,
+        "duration": 0.14,
+        "rms": 0.09268,
+        "f0": 78.52,
+        "spectral_centroid": 3043.93,
+        "zcr": 0.0646
+      },
+      {
+        "slice_id": 130,
+        "mora_id": 2,
+        "text": "か",
+        "start": 17.69,
+        "end": 17.84,
+        "duration": 0.15,
+        "rms": 0.09184,
+        "f0": 96.62,
+        "spectral_centroid": 2172.53,
+        "zcr": 0.03906
+      },
+      {
+        "slice_id": 131,
+        "mora_id": 3,
+        "text": "ん",
+        "start": 17.84,
+        "end": 17.92,
+        "duration": 0.08,
+        "rms": 0.13863,
+        "f0": 113.06,
+        "spectral_centroid": 1908.84,
+        "zcr": 0.02776
+      }
+    ]
+  },
+  {
+    "word_id": 45,
+    "word": "収縮",
+    "start": 17.92,
+    "end": 18.309999,
+    "moras": [
+      {
+        "slice_id": 132,
+        "mora_id": 1,
+        "text": "sh",
+        "start": 17.92,
+        "end": 18.01,
+        "duration": 0.09,
+        "rms": 0.04269,
+        "f0": 1874.32,
+        "spectral_centroid": 5829.94,
+        "zcr": 0.17798
+      },
+      {
+        "slice_id": 133,
+        "mora_id": 2,
+        "text": "ɨ",
+        "start": 18.01,
+        "end": 18.1,
+        "duration": 0.09,
+        "rms": 0.11401,
+        "f0": 115.15,
+        "spectral_centroid": 1891.23,
+        "zcr": 0.03033
+      },
+      {
+        "slice_id": 134,
+        "mora_id": 3,
+        "text": "sh",
+        "start": 18.1,
+        "end": 18.18,
+        "duration": 0.08,
+        "rms": 0.04617,
+        "f0": 1762.71,
+        "spectral_centroid": 5409.59,
+        "zcr": 0.16706
+      },
+      {
+        "slice_id": 135,
+        "mora_id": 4,
+        "text": "ɨ",
+        "start": 18.18,
+        "end": 18.21,
+        "duration": 0.03,
+        "rms": 0.01205,
+        "f0": 0.0,
+        "spectral_centroid": 5583.1,
+        "zcr": 0.11296
+      },
+      {
+        "slice_id": 136,
+        "mora_id": 5,
+        "text": "k",
+        "start": 18.21,
+        "end": 18.26,
+        "duration": 0.05,
+        "rms": 0.00759,
+        "f0": 0.0,
+        "spectral_centroid": 3555.91,
+        "zcr": 0.07236
+      },
+      {
+        "slice_id": 137,
+        "mora_id": 6,
+        "text": "う",
+        "start": 18.26,
+        "end": 18.31,
+        "duration": 0.05,
+        "rms": 0.09044,
+        "f0": 66.88,
+        "spectral_centroid": 1710.72,
+        "zcr": 0.01924
+      }
+    ]
+  },
+  {
+    "word_id": 46,
+    "word": "に",
+    "start": 18.309999,
+    "end": 18.42,
+    "moras": [
+      {
+        "slice_id": 138,
+        "mora_id": 1,
+        "text": "nyi",
+        "start": 18.31,
+        "end": 18.42,
+        "duration": 0.11,
+        "rms": 0.07477,
+        "f0": 65.79,
+        "spectral_centroid": 1844.01,
+        "zcr": 0.03638
+      }
+    ]
+  },
+  {
+    "word_id": 47,
+    "word": "深く",
+    "start": 18.42,
+    "end": 18.76,
+    "moras": [
+      {
+        "slice_id": 139,
+        "mora_id": 1,
+        "text": "ɸ",
+        "start": 18.42,
+        "end": 18.51,
+        "duration": 0.09,
+        "rms": 0.0204,
+        "f0": 65.41,
+        "spectral_centroid": 6219.43,
+        "zcr": 0.17908
+      },
+      {
+        "slice_id": 140,
+        "mora_id": 2,
+        "text": "か",
+        "start": 18.51,
+        "end": 18.66,
+        "duration": 0.15,
+        "rms": 0.11153,
+        "f0": 104.75,
+        "spectral_centroid": 2417.75,
+        "zcr": 0.04334
+      },
+      {
+        "slice_id": 141,
+        "mora_id": 3,
+        "text": "k",
+        "start": 18.66,
+        "end": 18.73,
+        "duration": 0.07,
+        "rms": 0.00864,
+        "f0": 0.0,
+        "spectral_centroid": 3054.74,
+        "zcr": 0.0558
+      },
+      {
+        "slice_id": 142,
+        "mora_id": 4,
+        "text": "う",
+        "start": 18.73,
+        "end": 18.76,
+        "duration": 0.03,
+        "rms": 0.01479,
+        "f0": 66.69,
+        "spectral_centroid": 2795.56,
+        "zcr": 0.0179
+      }
+    ]
+  },
+  {
+    "word_id": 48,
+    "word": "関与",
+    "start": 18.76,
+    "end": 19.040001,
+    "moras": [
+      {
+        "slice_id": 143,
+        "mora_id": 1,
+        "text": "か",
+        "start": 18.76,
+        "end": 18.87,
+        "duration": 0.11,
+        "rms": 0.04606,
+        "f0": 70.8,
+        "spectral_centroid": 3893.39,
+        "zcr": 0.077
+      },
+      {
+        "slice_id": 144,
+        "mora_id": 2,
+        "text": "ɰ̃",
+        "start": 18.87,
+        "end": 18.94,
+        "duration": 0.07,
+        "rms": 0.10702,
+        "f0": 67.45,
+        "spectral_centroid": 2058.1,
+        "zcr": 0.02985
+      },
+      {
+        "slice_id": 145,
+        "mora_id": 3,
+        "text": "よ",
+        "start": 18.94,
+        "end": 19.04,
+        "duration": 0.1,
+        "rms": 0.07794,
+        "f0": 65.41,
+        "spectral_centroid": 1737.41,
+        "zcr": 0.02062
+      },
+      {
+        "slice_id": 146,
+        "mora_id": 4,
+        "text": "sh",
+        "start": 19.04,
+        "end": 19.12,
+        "duration": 0.08,
+        "rms": 0.02249,
+        "f0": 1973.87,
+        "spectral_centroid": 5669.14,
+        "zcr": 0.18408
+      }
+    ]
+  },
+  {
+    "word_id": 49,
+    "word": "して",
+    "start": 19.040001,
+    "end": 19.209999,
+    "moras": [
+      {
+        "slice_id": 147,
+        "mora_id": 1,
+        "text": "て",
+        "start": 19.12,
+        "end": 19.21,
+        "duration": 0.09,
+        "rms": 0.04455,
+        "f0": 66.73,
+        "spectral_centroid": 3672.97,
+        "zcr": 0.08307
+      }
+    ]
+  },
+  {
+    "word_id": 50,
+    "word": "いる",
+    "start": 19.209999,
+    "end": 19.309999,
+    "moras": [
+      {
+        "slice_id": 148,
+        "mora_id": 1,
+        "text": "い",
+        "start": 19.21,
+        "end": 19.24,
+        "duration": 0.03,
+        "rms": 0.06683,
+        "f0": 0.0,
+        "spectral_centroid": 1761.24,
+        "zcr": 0.0127
+      },
+      {
+        "slice_id": 149,
+        "mora_id": 2,
+        "text": "r",
+        "start": 19.24,
+        "end": 19.27,
+        "duration": 0.03,
+        "rms": 0.05034,
+        "f0": 66.17,
+        "spectral_centroid": 1705.06,
+        "zcr": 0.01335
+      },
+      {
+        "slice_id": 150,
+        "mora_id": 3,
+        "text": "う",
+        "start": 19.27,
+        "end": 19.31,
+        "duration": 0.04,
+        "rms": 0.05648,
+        "f0": 65.41,
+        "spectral_centroid": 1548.28,
+        "zcr": 0.00903
+      }
+    ]
+  },
+  {
+    "word_id": 51,
+    "word": "こと",
+    "start": 19.309999,
+    "end": 19.51,
+    "moras": [
+      {
+        "slice_id": 151,
+        "mora_id": 1,
+        "text": "こ",
+        "start": 19.31,
+        "end": 19.41,
+        "duration": 0.1,
+        "rms": 0.0245,
+        "f0": 66.13,
+        "spectral_centroid": 2555.44,
+        "zcr": 0.03727
+      },
+      {
+        "slice_id": 152,
+        "mora_id": 2,
+        "text": "と",
+        "start": 19.41,
+        "end": 19.51,
+        "duration": 0.1,
+        "rms": 0.04655,
+        "f0": 65.69,
+        "spectral_centroid": 2470.53,
+        "zcr": 0.03103
+      }
+    ]
+  },
+  {
+    "word_id": 52,
+    "word": "が",
+    "start": 19.51,
+    "end": 19.77,
+    "moras": [
+      {
+        "slice_id": 153,
+        "mora_id": 1,
+        "text": "が",
+        "start": 19.51,
+        "end": 19.77,
+        "duration": 0.26,
+        "rms": 0.09224,
+        "f0": 382.41,
+        "spectral_centroid": 1576.23,
+        "zcr": 0.03435
+      }
+    ]
+  },
+  {
+    "word_id": 53,
+    "word": "明らか",
+    "start": 19.77,
+    "end": 20.15,
+    "moras": [
+      {
+        "slice_id": 154,
+        "mora_id": 1,
+        "text": "あ",
+        "start": 19.77,
+        "end": 19.84,
+        "duration": 0.07,
+        "rms": 0.03313,
+        "f0": 382.61,
+        "spectral_centroid": 1521.6,
+        "zcr": 0.01765
+      },
+      {
+        "slice_id": 155,
+        "mora_id": 2,
+        "text": "ひ",
+        "start": 19.84,
+        "end": 19.94,
+        "duration": 0.1,
+        "rms": 0.0292,
+        "f0": 72.8,
+        "spectral_centroid": 3524.15,
+        "zcr": 0.09142
+      },
+      {
+        "slice_id": 156,
+        "mora_id": 3,
+        "text": "ら",
+        "start": 19.94,
+        "end": 20.03,
+        "duration": 0.09,
+        "rms": 0.1501,
+        "f0": 77.76,
+        "spectral_centroid": 1673.31,
+        "zcr": 0.0296
+      },
+      {
+        "slice_id": 157,
+        "mora_id": 4,
+        "text": "か",
+        "start": 20.03,
+        "end": 20.15,
+        "duration": 0.12,
+        "rms": 0.06692,
+        "f0": 0.0,
+        "spectral_centroid": 2496.33,
+        "zcr": 0.05238
+      }
+    ]
+  },
+  {
+    "word_id": 54,
+    "word": "に",
+    "start": 20.15,
+    "end": 20.24,
+    "moras": [
+      {
+        "slice_id": 158,
+        "mora_id": 1,
+        "text": "nyi",
+        "start": 20.15,
+        "end": 20.24,
+        "duration": 0.09,
+        "rms": 0.05531,
+        "f0": 65.5,
+        "spectral_centroid": 1513.34,
+        "zcr": 0.01666
+      }
+    ]
+  },
+  {
+    "word_id": 55,
+    "word": "なりました",
+    "start": 20.24,
+    "end": 20.74,
+    "moras": [
+      {
+        "slice_id": 159,
+        "mora_id": 1,
+        "text": "な",
+        "start": 20.24,
+        "end": 20.33,
+        "duration": 0.09,
+        "rms": 0.03685,
+        "f0": 296.23,
+        "spectral_centroid": 1389.13,
+        "zcr": 0.02185
+      },
+      {
+        "slice_id": 160,
+        "mora_id": 2,
+        "text": "rʲi",
+        "start": 20.33,
+        "end": 20.39,
+        "duration": 0.06,
+        "rms": 0.0318,
+        "f0": 208.11,
+        "spectral_centroid": 1461.44,
+        "zcr": 0.01383
+      },
+      {
+        "slice_id": 161,
+        "mora_id": 3,
+        "text": "ま",
+        "start": 20.39,
+        "end": 20.48,
+        "duration": 0.09,
+        "rms": 0.0452,
+        "f0": 65.41,
+        "spectral_centroid": 1419.28,
+        "zcr": 0.01538
+      },
+      {
+        "slice_id": 162,
+        "mora_id": 4,
+        "text": "sh",
+        "start": 20.48,
+        "end": 20.54,
+        "duration": 0.06,
+        "rms": 0.0143,
+        "f0": 0.0,
+        "spectral_centroid": 5934.68,
+        "zcr": 0.16024
+      },
+      {
+        "slice_id": 163,
+        "mora_id": 5,
+        "text": "た",
+        "start": 20.54,
+        "end": 20.74,
+        "duration": 0.2,
+        "rms": 0.02409,
+        "f0": 432.0,
+        "spectral_centroid": 3082.53,
+        "zcr": 0.07826
+      }
+    ]
+  }
+]

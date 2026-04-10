@@ -8,6 +8,8 @@ contextBridge.exposeInMainWorld('api', {
   sendAttacks: (attacks) => ipcRenderer.send('attacks-ready', attacks),
   // win3 → main: 新モーラ追加通知
   sendMoraAdded: (payload) => ipcRenderer.send('mora-added', payload),
+  // win3 → main: moraのend更新通知
+  sendMoraEndUpdated: (payload) => ipcRenderer.send('mora-end-updated', payload),
   // main → win3: .mora ファイルからアタックを復元
   onRestoreAttacks: (callback) =>
     ipcRenderer.on('restore-attacks', (_event, attacks) => callback(attacks)),
@@ -20,6 +22,9 @@ contextBridge.exposeInMainWorld('api', {
   // main → win3: 追加モーラの復元
   onRestoreAddedMoras: (callback) =>
     ipcRenderer.on('restore-added-moras', (_event, items) => callback(items)),
+  // main → win3: moraEndUpdatesの復元
+  onRestoreMoraEndUpdates: (callback) =>
+    ipcRenderer.on('restore-mora-end-updates', (_event, updates) => callback(updates)),
   // main → win3: Timestretch 状態変更（ratio: 0.5〜1.0 or null）
   onTimestrechChanged: (callback) =>
     ipcRenderer.on('timestretch-changed', (_event, ratio) => callback(ratio)),
